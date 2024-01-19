@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Utama Website SISTA</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        // Fungsi untuk melakukan redirect
+        function redirectToURL() {
+            // Ganti URL di bawah ini dengan URL tujuan Anda
+            var targetURL = "views/index.html";
+
+            // Melakukan redirect
+            window.location.href = targetURL;
+        }
+        
+        // Melakukan redirect otomatis saat halaman dimuat
+        window.onload = function () {
+            redirectToURL();
+        };
+    </script>
+
+</html>
