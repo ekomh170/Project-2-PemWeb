@@ -14,5 +14,3 @@
  * Aditya Febriadi
  * Octaviani Nursalsabila
  * Nur Fadilah
-
-
