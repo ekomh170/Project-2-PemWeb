@@ -14,3 +14,13 @@
  * Aditya Febriadi
  * Octaviani Nursalsabila
  * Nur Fadilah
+
+<b>Pembagian Tugas Kelompok : </b>
+
+* <b>Eko Muchamad Haryono</b>, Fitur Yang Di Kerjakan :
+1.  Dashboard Seminar Adminstrator : dashboard_seminar_adm_sista.html
+2. Form Seminar Adminstrator : 
+3. Kelola Seminar Adminstrator :
+4. List Peserta Seminar Adminstrator :
+5. Mahasiswa Seminar Adminstrator :
+6. Dosen Seminar Adminstrator : 
