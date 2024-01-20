@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../../assets/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
@@ -49,36 +55,11 @@
           <li class="nav-item d-none d-sm-inline-block">
             <a href="../dashboard_seminar_adm_sista.html" class="nav-link">Dashboard TA</a>
           </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="../topbar/biodata_seminar_adm_sista.html" class="nav-link">Biodata Kelompok</a>
-          </li>
         </ul>
 
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
-          <!-- Navbar Search -->
-          <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-              <i class="fas fa-search"></i>
-            </a>
-            <div class="navbar-search-block">
-              <form class="form-inline">
-                <div class="input-group input-group-sm">
-                  <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                    aria-label="Search">
-                  <div class="input-group-append">
-                    <button class="btn btn-navbar" type="submit">
-                      <i class="fas fa-search"></i>
-                    </button>
-                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </li>
-
+         
           <li class="nav-item">
             <a class="nav-link" data-widget="fullscreen" href="#" role="button">
               <i class="fas fa-expand-arrows-alt"></i>
@@ -231,13 +212,120 @@
 
         <!-- Main content -->
         <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
 
+                <!-- /.card -->
+
+                <div class="card">
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>No Urut</th>
+                          <th>Dosen</th>
+                          <th>Bidang Keahlian</th>
+                          <th>Status Penguji</th>
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Prof. Dr. Ir. Budi Santoso, M.Sc.</td>
+                          <td>Sistem Informasi</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button
+                              type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Dr. Dewi Lestari, S.Kom., M.T.</td>
+                          <td>Teknologi Informasi</td>
+                          <td>Tidak Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button
+                              type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-toggle-on"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Prof. Dr. Ahmad Hasan, S.Si., M.Cs.</td>
+                          <td>Rekayasa Perangkat Lunak</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button
+                              type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Dr. Siti Aisyah, ST., M.Eng.</td>
+                          <td>Jaringan Komputer</td>
+                          <td>Tidak Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button
+                              type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-toggle-on"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Prof. Dr. Indra Wijaya, S.T., M.Kom.</td>
+                          <td>Basis Data</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button
+                              type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Dr. Ika Setiawati, S.Kom., M.Sc.</td>
+                          <td>Artificial Intelligence</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Prof. Dr. Adi Nugroho, S.Si., M.T.</td>
+                          <td>Data Science</td>
+                          <td>Tidak Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-toggle-on"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Dr. Rina Wijayanti, ST., M.Cs.</td>
+                          <td>Cybersecurity</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Prof. Dr. Rudi Santoso, S.T., M.Kom.</td>
+                          <td>Mobile Application Development</td>
+                          <td>Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-outline-danger btn-sm"><i class="fas fa-toggle-off"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Dr. Nia Pratiwi, S.Kom., M.T.</td>
+                          <td>Software Engineering</td>
+                          <td>Tidak Aktif</td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-toggle-on"></i></button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
+
       </div>
       <!-- /.content-wrapper -->
       <footer class="main-footer">
-        <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 2</a></strong>
+        <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a></strong>
         <div class="float-right d-none d-sm-inline-block">
           <b>SISTA</b> 1.0
         </div>
@@ -287,6 +375,31 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <!-- <script src="../../../assets/dist/js/pages/dashboard.js"></script> -->
 
-  </body>
+    <!-- DataTables  & Plugins -->
+    <script src="../../../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../../assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../../assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/jszip/jszip.min.js"></script>
+    <script src="../../../assets/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../../assets/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        $("#example1").DataTable({
+          "responsive": true,
+          "lengthChange": false,
+          "autoWidth": false,
+          "buttons": ["copy", "csv", "excel", "pdf", "print"],
+          "pageLength": 5
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      });
+    </script>
 
 </html>
