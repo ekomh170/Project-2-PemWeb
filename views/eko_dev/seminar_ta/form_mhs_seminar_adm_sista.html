@@ -206,11 +206,144 @@
 
         <!-- Main content -->
         <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Form Daftar Seminar TA</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <!-- form start -->
+                  <form>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="name" class="form-control" id="nim"
+                              placeholder="Masukan Nomor Induk Mahasiswa">
+                          </div>
+                          <div class="form-group">
+                            <label for="nama_mhs">Mahasiswa</label>
+                            <input type="name" class="form-control" id="nama_mhs" placeholder="Masukan Mahasiswa">
+                          </div>
+                          <div class="form-group">
+                            <label for="prodi">Prodi</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
 
+                          <div class="form-group">
+                            <label>Date:</label>
+                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input"
+                                data-target="#reservationdate" />
+                              <div class="input-group-append" data-target="#reservationdate"
+                                data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="bootstrap-timepicker">
+                            <div class="form-group">
+                              <label>Time picker:</label>
+                              <div class="input-group date" id="timepicker" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#timepicker" />
+                                <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="ruangan">Ruangan</label>
+                              <input type="name" class="form-control" id="ruangan" placeholder="Masukan Ruangan">
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Tambah Seminar</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label>Judul TA</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter ..."></textarea>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="prodi">Jenis Seminar</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="prodi">Pembimbing</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="prodi">Penguji 1</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="prodi">Penguji 2</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="dokumen_seminar">Upload Dokumen Seminar</label>
+                            <div class="input-group">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="dokumen_seminar">
+                                <label class="custom-file-label" for="dokumen_seminar">Choose file</label>
+                              </div>
+                              <div class="input-group-append">
+                                <span class="input-group-text">Upload</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
         <!-- /.content -->
+
       </div>
       <!-- /.content-wrapper -->
+
       <footer class="main-footer">
         <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a></strong>
         <div class="float-right d-none d-sm-inline-block">
@@ -261,7 +394,7 @@
     <!-- <script src="../../../assets/dist/js/demo.js"></script> -->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <!-- <script src="../../../assets/dist/js/pages/dashboard.js"></script> -->
-    
+
   </body>
 
 </html>
