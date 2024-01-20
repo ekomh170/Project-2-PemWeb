@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../../../assets/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../../assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
@@ -200,17 +206,187 @@
                 </ol>
               </div><!-- /.col -->
             </div><!-- /.row -->
+            <div class="row mt-4">
+              <div class="col-sm-12">
+                <button type="button" class="btn btn-success" onclick="window.location.href='form_mhs_seminar_adm_sista.html'">Tambah Seminar Baru</button>
+
+              </div>
+            </div>
           </div><!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
 
         <!-- Main content -->
         <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
 
+                <!-- /.card -->
+                <div class="card">
+                  <div class="card-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>No Urut</th>
+                          <th>Mahasiswa</th>
+                          <th>Seminar</th>
+                          <th>Waktu</th>
+                          <th>Ruangan</th>
+                          <th>Jumlah Peserta</th>
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Eko Muchamad Haryono</td>
+                          <td>Seminar Tugas Akhir</td>
+                          <td>10:00 21-01-2024</td>
+                          <td>Online</td>
+                          <td>Peserta 10 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <!-- 9 data dummy -->
+                        <tr>
+                          <td>2</td>
+                          <td>Aditya Febriadi</td>
+                          <td>Seminar Proposal</td>
+                          <td>14:30 21-01-2024</td>
+                          <td>Ruangan A123</td>
+                          <td>Peserta 8 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Octaviani Nursalsabila</td>
+                          <td>Seminar Sidang Skripsi</td>
+                          <td>09:45 21-01-2024</td>
+                          <td>Ruangan B456</td>
+                          <td>Peserta 15 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Nur Fadilah</td>
+                          <td>Seminar Presentasi Proyek</td>
+                          <td>11:15 21-01-2024</td>
+                          <td>Ruangan C789</td>
+                          <td>Peserta 12 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Fatiya Labibah</td>
+                          <td>Seminar Presentasi Proyek Akhir</td>
+                          <td>13:00 21-01-2024</td>
+                          <td>Ruangan D234</td>
+                          <td>Peserta 7 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Yossy Indra Kusuma</td>
+                          <td>Seminar Studi Kasus</td>
+                          <td>15:45 21-01-2024</td>
+                          <td>Ruangan E567</td>
+                          <td>Peserta 10 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Farida Rabbani Virdynata</td>
+                          <td>Seminar Presentasi Kelompok</td>
+                          <td>16:30 21-01-2024</td>
+                          <td>Ruangan F890</td>
+                          <td>Peserta 8 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Zaky Muhammad Hafizh</td>
+                          <td>Seminar Analisis Kasus</td>
+                          <td>14:00 21-01-2024</td>
+                          <td>Ruangan G123</td>
+                          <td>Peserta 6 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Shinta Nur Allyani</td>
+                          <td>Seminar Presentasi Akhir</td>
+                          <td>12:45 21-01-2024</td>
+                          <td>Ruangan H456</td>
+                          <td>Peserta 7 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Siti Karimah Warlidah</td>
+                          <td>Seminar Presentasi Akhir</td>
+                          <td>09:30 21-01-2024</td>
+                          <td>Ruangan I789</td>
+                          <td>Peserta 9 <a href="list_peserta_seminar_adm_sista.html">view</a></td>
+                          <td><button type="button" class="btn btn-outline-primary btn-sm"><i
+                                class="fa fa-edit"></i></button>
+                            <button type="button" class="btn btn-outline-danger btn-sm"><i
+                                class="fa fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
         </section>
         <!-- /.content -->
+
       </div>
       <!-- /.content-wrapper -->
+
       <footer class="main-footer">
         <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a></strong>
         <div class="float-right d-none d-sm-inline-block">
@@ -261,6 +437,33 @@
     <!-- <script src="../../../assets/dist/js/demo.js"></script> -->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <!-- <script src="../../../assets/dist/js/pages/dashboard.js"></script> -->
+
+    <!-- DataTables  & Plugins -->
+    <script src="../../../assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../../assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../../assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../../assets/plugins/jszip/jszip.min.js"></script>
+    <script src="../../../assets/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../../assets/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../../assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        $("#example1").DataTable({
+          "responsive": true,
+          "lengthChange": false,
+          "autoWidth": false,
+          "buttons": ["copy", "csv", "excel", "pdf", "print"],
+          "pageLength": 5
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      });
+    </script>
 
   </body>
 
