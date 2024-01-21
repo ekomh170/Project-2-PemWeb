@@ -1,11 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama Website SISTA</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Halaman Utama - SISTA</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../../assets/dist/img/favicon/favicon.ico">
+        <link rel="icon" media="(max-width: 640px)" href="../../assets/dist/img/favicon/android-chrome-512x512.png">
+
+        <!-- Favicon -->
+        <link href="../assets/landing_page/img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/../assets/landing_page/css/all.min.css"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="../assets/landing_page/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../assets/landing_page/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../assets/landing_page/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../assets/landing_page/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <img class="animation__shake" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+                height="60" width="60">
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-white sticky-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="img-fluid" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Logo"
+                            style="border-radius: 50%;">
+                    </a>
+                    <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto">
+                            <a href="index.html" class="nav-item nav-link active">Halaman Utama</a>
+                            <a href="nur_dev/jadwal_sista.html" class="nav-item nav-link">Jadwal</a>
+                            <a href="adit_dev/form_daftar_peserta_sista.html" class="nav-item nav-link">Pengajuan</a>
+                            <a href="adit_dev/form_peserta_sista.html" class="nav-item nav-link">Peserta</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Hal Lain</a>
+                                <div class="dropdown-menu bg-light rounded-0 m-0">
+                                    <a href="feature.html" class="dropdown-item">Tentang Project</a>
+                                    <a href="blog.html" class="dropdown-item">Kontak Project</a>
+                                </div>
+                            </div>
+                            <a href="nur_dev/login_sista.html" class="nav-item nav-link">Login</a>
+                            <a href="okta_dev/regis_sista.html" class="nav-item nav-link">Register</a>
+                        </div>
+                        <div class="border-start ps-4 d-none d-lg-block">
+                            <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0 mb-5">
+            <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="../assets/landing_page/img/carousel_utama.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 text-center">
+                                        <p class="fs-4 text-white animated zoomIn">Selamat Datang di <strong
+                                                class="text-dark">SISTA</strong></p>
+                                        <h1 class="display-1 text-dark mb-4 animated zoomIn">Sistem Informasi Seminar
+                                            Tugas Akhir</h1>
+                                        <a href="nur_dev/jadwal_sista.html"
+                                            class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Jadwal
+                                            Seminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="../assets/landing_page/img/carousel_kedua.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 text-center">
+                                        <p class="fs-4 text-white animated zoomIn">Selamat Datang di <strong
+                                                class="text-dark">SISTA</strong></p>
+                                        <h1 class="display-1 text-dark mb-4 animated zoomIn">Sistem Informasi Seminar
+                                            Tugas Akhir</h1>
+                                        <a href="nur_dev/jadwal_sista.html"
+                                            class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">Jadwal
+                                            Seminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s"
+                                    src="../assets/landing_page/img/sista.png" alt="">
+                                <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s"
+                                    src="../assets/landing_page/img/sista4.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s"
+                                    src="../assets/landing_page/img/sista5.png" alt="">
+                                <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s"
+                                    src="../assets/landing_page/img/sista2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <p class="fs-5 fw-medium fst-italic text-primary">Tentang Project</p>
+                            <h1 class="display-6">Sistem Informasi Seminar Tugas Akhir (SISTA)</h1>
+                        </div>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-4">
+                                <img class="img-fluid bg-white w-100" src="../assets/landing_page/img/sista.png" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5>Dashboard Admin Sista</h5>
+                                <p class="mb-0">Dashboard memberikan gambaran umum tentang status dan kemajuan seminar
+                                    yang sedang berlangsung. Informasi ini dapat mencakup jumlah seminar yang telah
+                                    dilaksanakan, jumlah peserta, serta statistik lainnya.</p>
+                            </div>
+                        </div>
+                        <div class="border-top mb-4"></div>
+                        <div class="row g-3">
+                            <div class="col-sm-8">
+                                <h5>Fungsi dari Form SISTA</h5>
+                                <p class="mb-0">Ungkapan ini menyiratkan tujuan utama atau fungsi dari formulir
+                                    tersebut. Dalam konteks ini, formulir SISTA dirancang dan diperuntukkan agar
+                                    pengguna dapat memasukkan atau menyimpan informasi terkait seminar ke dalam sistem.
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-fluid bg-white w-100" src="../assets/landing_page/img/sista4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Article Start -->
+        <div class="container-fluid product py-5 my-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid" src="../assets/landing_page/img/sista2.png" alt="">
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <p class="fs-5 fw-medium fst-italic text-primary">Tujuan Aplikasi Dibuat </p>
+                            <h1 class="display-6">Sistem Informasi Seminar Tugas Akhir (Sista)</h1>
+                        </div>
+                        <p class="mb-4">Sistem Informasi Seminar Tugas Akhir berfungsi sebagai platform terintegrasi
+                            untuk memudahkan pendaftaran dan manajemen seminar, memfasilitasi komunikasi efektif antara
+                            mahasiswa dan dosen, memonitor progres tugas akhir, mendukung
+                            evaluasi dan umpan balik, menyajikan laporan sederhana,bertujuan untuk meningkatkan
+                            efisiensi dan kualitas pelaksanaan seminar dan memunculkan sebuah inovasi.
+                            tugas akhir di lingkungan akademis.</p>
+                        <p class="mb-4">Sebelum Senang Saya Sedikit Menjelaskan Pada Akhirnya Ini Adalah, Prototipe
+                            Sistem Informasi Seminar Tugas Akhir saat ini memiliki beberapa
+                            kekurangan yang dapat diidentifikasi, terutama terkait dengan tidak adanya integrasi dengan
+                            database.
+                        </p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Article End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid py-5 my-5">
+            <div class="container py-5">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-black">Anggota Kelompok : 4 Orang</p>
+                    <h1 class="display-6">Kelompok 7</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <p class="mb-4">Saya lulusan SMKS 1 TRIPLE J 2020/2021, jurusan Rekayasa Perangkat Lunak. Saya
+                            pernah mengikuti program Jabar Coding Camp (JCC). Saat Ini Saya Berkuliah di Sekolah Tinggi
+                            Teknologi Nurul Fikri (STT NF) & Terkadang Sambil Berkerja Freelancer.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="img-fluid flex-shrink-0" src="../assets/landing_page/img/foto_profile.png"
+                                alt="">
+                            <div class="text-start ms-3">
+                                <h5>Eko Muchamad Haryono</h5>
+                                <span class="text-primary">Ketua Kelompok 7 - Mahasiswa & Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <p class="mb-4">-</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="img-fluid flex-shrink-0" src="../assets/landing_page/img/user.png" alt="">
+                            <div class="text-start ms-3">
+                                <h5>Aditya Febriadi</h5>
+                                <span class="text-primary">Anggota Kelompok</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <p class="mb-4">-</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="img-fluid flex-shrink-0" src="../assets/landing_page/img/user.png" alt="">
+                            <div class="text-start ms-3">
+                                <h5>Nur Fadilah</h5>
+                                <span class="text-primary">Anggota Kelompok</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <p class="mb-4">-</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="img-fluid flex-shrink-0" src="../assets/landing_page/img/user.png" alt="">
+                            <div class="text-start ms-3">
+                                <h5>Octaviani Nursalsabila</h5>
+                                <span class="text-primary">Anggota Kelompok</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-primary mb-4">Akses Cepat Tautan :</h4>
+                        <a class="btn btn-link" href="">Halaman Utama</a>
+                        <a class="btn btn-link" href="">Jadwal Seminar</a>
+                        <a class="btn btn-link" href="">Pengajuan Seminar</a>
+                        <a class="btn btn-link" href="">Pendaftaran Peserta Seminar</a>
+                        <a class="btn btn-link" href="">Berita</a>
+                        <a class="btn btn-link" href="">Login</a>
+                        <a class="btn btn-link" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="fw-medium" href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a> Sista 1.0.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Versi Aplikasi : Sista 1.0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/landing_page/lib/wow/wow.min.js"></script>
+        <script src="../assets/landing_page/lib/easing/easing.min.js"></script>
+        <script src="../assets/landing_page/lib/waypoints/waypoints.min.js"></script>
+        <script src="../assets/landing_page/lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../assets/landing_page/js/main.js"></script>
+    </body>
+
 </html>
