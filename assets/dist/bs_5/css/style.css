@@ -105,7 +105,7 @@ textarea {
   box-shadow: none;
   padding: 10px 15px;
   border-radius:20px;
-  border:1px solid#2b3990;
+  border:1px solidblack;
 }
 
 .checkbox{
@@ -117,7 +117,7 @@ textarea {
     display: inline-block;
     width: 100%;
     padding: 12px 0px;
-    background: #2b3990;
+    background: black;
     border-radius: 20px;
     text-align: center;
     font-size: 16px;
@@ -145,7 +145,7 @@ textarea {
   transition:0.2s;
   background:#fff;
   border-radius:50px;
-  border:1px solid#2b3990;
+  border:1px solidblack;
   margin:0 0 0 10px;
   transition:0.2s;
 }
@@ -195,7 +195,7 @@ textarea {
 
 ._social_04 ol li i{
   font-size:15px;
-  color:#2b3990;
+  color:black;
 }
 
 .nm_lk{
