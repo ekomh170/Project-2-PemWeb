@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Edit Seminar Mahasiswa TA - Adm - SISTA</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
+    <link rel="icon" media="(max-width: 640px)" href="../../../assets/dist/img/favicon/android-chrome-512x512.png">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -35,7 +39,7 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60"
+        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
           width="60">
       </div>
 
@@ -59,11 +63,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-              <i class="fas fa-th-large"></i>
-            </a>
-          </li>
+          
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -71,8 +71,8 @@
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
-          <img src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+        <a href="#" class="brand-link">
+          <img src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
           <span class="brand-text font-weight-light">SISTA</span>
         </a>
@@ -82,7 +82,7 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../../../assets/dist/img/eko/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block">Eko Muchamad Haryono</a>
@@ -192,8 +192,9 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Form Edit Seminar Mahasiswa TA <button type="button" class="btn btn-outline-primary btn-sm"><a href="../seminar_ta/edit_mhs_seminar_adm_sista.html"><i
-                    class="fa fa-edit"></i></a></button> </h1>
+                <h1 class="m-0">Form Edit Seminar Mahasiswa TA <button type="button"
+                    class="btn btn-outline-primary btn-sm"><a href="../seminar_ta/edit_mhs_seminar_adm_sista.html"><i
+                        class="fa fa-edit"></i></a></button> </h1>
               </div><!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -224,11 +225,11 @@
                           <div class="form-group">
                             <label for="nim">NIM</label>
                             <input type="name" class="form-control" id="nim"
-                              placeholder="Masukan Nomor Induk Mahasiswa">
+                              placeholder="Masukan Nomor Induk Mahasiswa" value="0110223079">
                           </div>
                           <div class="form-group">
                             <label for="nama_mhs">Mahasiswa</label>
-                            <input type="name" class="form-control" id="nama_mhs" placeholder="Masukan Mahasiswa">
+                            <input type="name" class="form-control" id="nama_mhs" placeholder="Masukan Mahasiswa" value="Eko Muchamad Haryono">
                           </div>
                           <div class="form-group">
                             <label for="prodi">Prodi</label>
@@ -242,7 +243,7 @@
                           <div class="form-group">
                             <label>Tanggal Seminar</label>
                             <div class="input-group date">
-                              <input type="date" name="tanggal_seminar" class="form-control" />
+                              <input type="date" name="tanggal_seminar" value="2024-01-21" class="form-control" />
                             </div>
                           </div>
 
@@ -250,17 +251,17 @@
                             <div class="form-group">
                               <label>Waktu Seminar</label>
                               <div class="input-group date">
-                                <input type="time" name="waktu_seminar" class="form-control" />
+                                <input type="time" name="waktu_seminar" value="10:10" class="form-control" />
                               </div>
                             </div>
 
                             <div class="form-group">
                               <label for="ruangan">Ruangan</label>
-                              <input type="name" class="form-control" id="ruangan" placeholder="Masukan Ruangan">
+                              <input type="name" class="form-control" id="ruangan" placeholder="Masukan Ruangan" value="B1-101">
                             </div>
                           </div>
                           <div class="card-footer">
-                            <button type="button" class="btn btn-primary" onclick="validateForm();">Tambah
+                            <button type="button" class="btn btn-primary" onclick="validateForm();">Edit
                               Seminar</button>
                           </div>
                         </div>
@@ -271,14 +272,14 @@
                           <div class="form-group">
                             <label name="judul_seminar">Judul Seminar</label>
                             <textarea class="form-control" name="judul_seminar" rows="4"
-                              placeholder="Masukan Judul Seminar"></textarea>
+                              placeholder="Masukan Judul Seminar">SIMRS (Sistem Informasi Manajemen Rumah Sakit)	</textarea>
                           </div>
 
                           <div class="form-group">
                             <label for="jenis_seminar">Jenis Seminar</label>
                             <select class="custom-select form-control-border" id="jenis_seminar">
-                              <option readonly>Pilih Jenis Seminar</option>
                               <option value="Seminar Tugas Akhir">Seminar Tugas Akhir</option>
+                              <option readonly>Pilih Jenis Seminar</option>
                               <option value="Seminar Proposal">Seminar Proposal</option>
                               <option value="Seminar Sidang Skripsi">Seminar Sidang Skripsi</option>
                               <option value="Seminar Presentasi Proyek">Seminar Presentasi Proyek</option>
@@ -292,6 +293,8 @@
                           <div class="form-group">
                             <label for="pembimbing">Pembimbing</label>
                             <select class="custom-select form-control-border" id="pembimbing">
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
                               <option readonly>Pilih Pembimbing</option>
                               <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
                               </option>
@@ -310,6 +313,7 @@
                           <div class="form-group">
                             <label for="penguji_1">Penguji 1</label>
                             <select class="custom-select form-control-border" id="penguji_1">
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
                               <option readonly>Pilih Penguji 1</option>
                               <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
                               </option>
@@ -319,7 +323,6 @@
                               </option>
                               <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
                               </option>
-                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
                               <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
                               </option>
                             </select>
@@ -328,6 +331,8 @@
                           <div class="form-group">
                             <label for="penguji_2">Penguji 2</label>
                             <select class="custom-select form-control-border" id="penguji_2">
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
                               <option readonly>Pilih Penguji 2</option>
                               <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
                               </option>
@@ -335,8 +340,7 @@
                               </option>
                               <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
                               </option>
-                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
-                              </option>
+                              
                               <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
                               <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
                               </option>
@@ -442,8 +446,8 @@
 
         // Tampilkan pemberitahuan keberhasilan
         alert("Formulir berhasil disimpan!");
-       
-       window.location.href = "kelola_seminar_adm_sista.html";
+
+        window.location.href = "kelola_seminar_adm_sista.html";
 
 
         return true; // Memungkinkan pengiriman formulir
