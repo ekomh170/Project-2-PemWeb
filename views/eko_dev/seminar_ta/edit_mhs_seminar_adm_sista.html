@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Edit Seminar Mahasiswa TA - Adm - SISTA</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../../assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet"
+      href="../../../assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../../assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../../../assets/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../../assets/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../../../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../../../assets/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../../../assets/plugins/summernote/summernote-bs4.min.css">
+  </head>
+
+  <body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+      <!-- Preloader -->
+      <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60"
+          width="60">
+      </div>
+
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="../dashboard_seminar_adm_sista.html" class="nav-link">Dashboard TA</a>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3" style="opacity: .8">
+          <span class="brand-text font-weight-light">SISTA</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="../../../assets/dist/img/eko/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Eko Muchamad Haryono</a>
+            </div>
+          </div>
+
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+              <li class="nav-header">DATA UTAMA</li>
+              <li class="nav-item">
+                <a href="../dashboard_seminar_adm_sista.html" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard TA
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Seminar TA
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="list_peserta_seminar_adm_sista.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daftar Seminar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="form_mhs_seminar_adm_sista.html" class="nav-link active">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Form Seminar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="kelola_seminar_adm_sista.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Kelola Seminar</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-header">DATA MASTER</li>
+              <li class="nav-item">
+                <a href="../mahasiswa/mahasiswa_seminar_adm_sista.html" class="nav-link">
+                  <i class="nav-icon far fa-user"></i>
+                  <p>
+                    Mahasiswa
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="../dosen/dosen_seminar_adm_sista.html" class="nav-link">
+                  <i class="nav-icon far fa-user"></i>
+                  <p>
+                    Dosen
+                  </p>
+                </a>
+              </li>
+
+              <li class="nav-header">KELUAR SESI ADMIN</li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <p>
+                    Keluar Aplikasi
+                  </p>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Form Edit Seminar Mahasiswa TA <button type="button" class="btn btn-outline-primary btn-sm"><a href="../seminar_ta/edit_mhs_seminar_adm_sista.html"><i
+                    class="fa fa-edit"></i></a></button> </h1>
+              </div><!-- /.col -->
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="../dashboard_seminar_adm_sista.html">Dashboard</a></li>
+                  <li class="breadcrumb-item active">Form Edit Seminar Mahasiswa TA</li>
+                </ol>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Form Edit Daftar Seminar TA</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <!-- form start -->
+                  <form id="seminarForm">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="name" class="form-control" id="nim"
+                              placeholder="Masukan Nomor Induk Mahasiswa">
+                          </div>
+                          <div class="form-group">
+                            <label for="nama_mhs">Mahasiswa</label>
+                            <input type="name" class="form-control" id="nama_mhs" placeholder="Masukan Mahasiswa">
+                          </div>
+                          <div class="form-group">
+                            <label for="prodi">Prodi</label>
+                            <select class="custom-select form-control-border" id="prodi">
+                              <option>Teknik Informatika</option>
+                              <option>Sistem Informasi</option>
+                              <option>Bisnis Digital</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label>Tanggal Seminar</label>
+                            <div class="input-group date">
+                              <input type="date" name="tanggal_seminar" class="form-control" />
+                            </div>
+                          </div>
+
+                          <div class="bootstrap-timepicker">
+                            <div class="form-group">
+                              <label>Waktu Seminar</label>
+                              <div class="input-group date">
+                                <input type="time" name="waktu_seminar" class="form-control" />
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="ruangan">Ruangan</label>
+                              <input type="name" class="form-control" id="ruangan" placeholder="Masukan Ruangan">
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="validateForm();">Tambah
+                              Seminar</button>
+                          </div>
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label name="judul_seminar">Judul Seminar</label>
+                            <textarea class="form-control" name="judul_seminar" rows="4"
+                              placeholder="Masukan Judul Seminar"></textarea>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="jenis_seminar">Jenis Seminar</label>
+                            <select class="custom-select form-control-border" id="jenis_seminar">
+                              <option readonly>Pilih Jenis Seminar</option>
+                              <option value="Seminar Tugas Akhir">Seminar Tugas Akhir</option>
+                              <option value="Seminar Proposal">Seminar Proposal</option>
+                              <option value="Seminar Sidang Skripsi">Seminar Sidang Skripsi</option>
+                              <option value="Seminar Presentasi Proyek">Seminar Presentasi Proyek</option>
+                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
+                              <option value="Seminar Studi Kasus">Seminar Studi Kasus</option>
+                              <option value="Seminar Presentasi Akhir">Seminar Presentasi Akhir</option>
+                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="pembimbing">Pembimbing</label>
+                            <select class="custom-select form-control-border" id="pembimbing">
+                              <option readonly>Pilih Pembimbing</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="penguji_1">Penguji 1</label>
+                            <select class="custom-select form-control-border" id="penguji_1">
+                              <option readonly>Pilih Penguji 1</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="penguji_2">Penguji 2</label>
+                            <select class="custom-select form-control-border" id="penguji_2">
+                              <option readonly>Pilih Penguji 2</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
+                            </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="status_seminar">Status Seminar</label>
+                            <input type="name" class="form-control" id="status_seminar"
+                              placeholder="Masukan Status Seminar" value="Proses Pengajuan" readonly>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- /.content -->
+
+      </div>
+      <!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a></strong>
+        <div class="float-right d-none d-sm-inline-block">
+          <b>SISTA</b> 1.0
+        </div>
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../../../assets/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../../../assets/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../../../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../../../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../../../assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../../../assets/plugins/moment/moment.min.js"></script>
+    <script src="../../../assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../../assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../../../assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../../assets/dist/js/adminlte.js"></script>
+
+    <script>
+      function validateForm() {
+
+        // Dapatkan elemen formulir
+        var nim = document.getElementById("nim").value;
+        var nama_mhs = document.getElementById("nama_mhs").value;
+        var prodi = document.getElementById("prodi").value;
+        // var tanggal_seminar = document.getElementById("tanggal_seminar").value;
+        // var waktu_seminar = document.getElementById("waktu_seminar").value;
+        var ruangan = document.getElementById("ruangan").value;
+        // var judul_seminar = document.getElementById("judul_seminar").value;
+        var jenis_seminar = document.getElementById("jenis_seminar").value;
+        var pembimbing = document.getElementById("pembimbing").value;
+        var penguji_1 = document.getElementById("penguji_1").value;
+        var penguji_2 = document.getElementById("penguji_2").value;
+
+        // Periksa apakah ada kolom yang kosong
+        if (
+          // !nim || !nama_mhs || !prodi || !tanggal_seminar ||
+          // !waktu_seminar || !ruangan || !judul_seminar || !jenis_seminar ||
+          // !pembimbing || !penguji_1 || !penguji_2
+
+          !nim || !nama_mhs || !prodi || !ruangan || !jenis_seminar ||
+          !pembimbing || !penguji_1 || !penguji_2
+        ) {
+          alert("Silakan isi semua kolom!");
+          return false; // Mencegah pengiriman formulir
+        }
+
+        // Tampilkan pemberitahuan keberhasilan
+        alert("Formulir berhasil disimpan!");
+       
+       window.location.href = "kelola_seminar_adm_sista.html";
+
+
+        return true; // Memungkinkan pengiriman formulir
+      }
+    </script>
+
+    <!-- AdminLTE for demo purposes -->
+    <!-- <script src="../../../assets/dist/js/demo.js"></script> -->
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- <script src="../../../assets/dist/js/pages/dashboard.js"></script> -->
+
+  </body>
+
+</html>
