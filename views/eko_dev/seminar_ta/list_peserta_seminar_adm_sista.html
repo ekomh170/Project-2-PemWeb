@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar/List Perserta Seminar - Adm - SISTA</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
+    <link rel="icon" media="(max-width: 640px)" href="../../../assets/dist/img/favicon/android-chrome-512x512.png">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -41,7 +45,7 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60"
+        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
           width="60">
       </div>
 
@@ -65,11 +69,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-              <i class="fas fa-th-large"></i>
-            </a>
-          </li>
+          
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -77,8 +77,8 @@
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
-          <img src="../../../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+        <a href="#" class="brand-link">
+          <img src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
           <span class="brand-text font-weight-light">SISTA</span>
         </a>
@@ -88,7 +88,7 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../../../assets/dist/img/eko/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block">Eko Muchamad Haryono</a>
@@ -235,7 +235,7 @@
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>0110223079</td>
+                          <td>0110223600</td>
                           <td>Deva Amanda</td>
                           <td>SIMRS (Sistem Informasi Manajemen Rumah Sakit) - <b>Eko M Haryono</b></td>
                           <td>Ditolak</td>
@@ -267,7 +267,7 @@
                           <td>4</td>
                           <td>0110223039</td>
                           <td>Muhammad Zen Alby</td>
-                          <td>Sistem Informasi Pengembangan Proses Pemeriksaan  - <b>Nur Fadilah</b></td>
+                          <td>Sistem Informasi Pengembangan Proses Pemeriksaan - <b>Nur Fadilah</b></td>
                           <td>Diterima</td>
                           <td><button type="button" class="btn btn-outline-primary btn-sm"><i
                                 class="fa fa-edit"></i></button> <button type="button"
@@ -415,8 +415,52 @@
     <script src="../../../assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="../../../assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
-    <!-- Page specific script -->
     <script>
+      $(document).ready(function () {
+        // Function to show alert based on column values
+        function showAlert(statusSeminar) {
+          if (statusSeminar === 'Ditolak') {
+            var confirmation = confirm('Anda yakin ingin menghapus data?');
+            if (confirmation) {
+              alert('Data berhasil dihapus.');
+            }
+          } else if (statusSeminar === 'Diterima') {
+            alert('Perserta dengan status Diterima tidak dapat dihapus karena sudah disetujui.');
+          } else if (statusSeminar === 'Ditunggu') {
+            alert('Perserta dengan status Ditunggu tidak dapat dihapus karena menunggu approval.');
+          } else {
+            alert('Status seminar tidak valid.');
+          }
+        }
+
+        // Function to handle delete button click
+        function handleDeleteButtonClick() {
+          var statusSeminar = $(this).closest('tr').find('td:nth-child(5)').text().trim();
+          showAlert(statusSeminar);
+        }
+
+        // Initial binding of delete button click event
+        $(document).on('click', '.btn-outline-danger', handleDeleteButtonClick);
+
+        // DataTables initialization with dynamic content
+        var table = $("#example1").DataTable({
+          "responsive": true,
+          "lengthChange": false,
+          "autoWidth": false,
+          "buttons": ["copy", "csv", "excel", "pdf", "print"],
+          "pageLength": 5
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
+        // Handle pagination change event
+        $('#example1').on('page.dt', function () {
+          // Rebind delete button click event after pagination
+          $('.btn-outline-danger').off('click').on('click', handleDeleteButtonClick);
+        });
+      });
+    </script>
+
+    <!-- Page specific script -->
+    <!-- <script>
       $(function () {
         $("#example1").DataTable({
           "responsive": true,
@@ -426,7 +470,7 @@
           "pageLength": 5
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
       });
-    </script>
+    </script> -->
 
   </body>
 
