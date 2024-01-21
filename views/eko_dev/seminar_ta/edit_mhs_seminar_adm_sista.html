@@ -169,7 +169,7 @@
 
               <li class="nav-header">KELUAR SESI ADMIN</li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" id="logoutButton" class="nav-link">
                   <i class="nav-icon fas fa-sign-out-alt"></i>
                   <p>
                     Keluar Aplikasi
@@ -453,6 +453,28 @@
         return true; // Memungkinkan pengiriman formulir
       }
     </script>
+
+        <!-- Logout -->
+        <script>
+          document.getElementById('logoutButton').addEventListener('click', function (event) {
+            event.preventDefault();
+    
+            // Anda dapat menambahkan logika validasi logout di sini
+            var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
+    
+            if (confirmLogout) {
+              // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
+              // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
+              alert('Logout berhasil!');
+              window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
+            } else {
+              // Tampilkan alert jika pengguna membatalkan logout
+              alert('Logout dibatalkan.');
+            }
+          });
+        </script>
+        <!-- Logout -->
+
 
     <!-- AdminLTE for demo purposes -->
     <!-- <script src="../../../assets/dist/js/demo.js"></script> -->

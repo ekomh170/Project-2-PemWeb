@@ -38,8 +38,8 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
-          width="60">
+        <img class="animation__shake" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+          height="60" width="60">
       </div>
 
       <!-- Navbar -->
@@ -62,7 +62,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -168,7 +168,7 @@
 
               <li class="nav-header">KELUAR SESI ADMIN</li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" id="logoutButton" class="nav-link">
                   <i class="nav-icon fas fa-sign-out-alt"></i>
                   <p>
                     Keluar Aplikasi
@@ -212,14 +212,13 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                   <div class="inner">
-                    <h3>150</h3>
-    
-                    <p>New Orders</p>
+                    <h3>10</h3>
+
+                    <p>Jumlah Seminar di Kelola</p>
                   </div>
                   <div class="icon">
-                    <i class="ion ion-bag"></i>
+                    <i class="ion ion-stats-bars"></i>
                   </div>
-                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -227,14 +226,13 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                   <div class="inner">
-                    <h3>53<sup style="font-size: 20px">%</sup></h3>
-    
-                    <p>Bounce Rate</p>
+                    <h3>10</h3>
+
+                    <p>Daftar Perserta Seminar</p>
                   </div>
                   <div class="icon">
                     <i class="ion ion-stats-bars"></i>
                   </div>
-                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -242,14 +240,12 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                   <div class="inner">
-                    <h3>44</h3>
-    
-                    <p>User Registrations</p>
+                    <h3>10</h3>
+                    <p>Jumlah Mahasiswa</p>
                   </div>
                   <div class="icon">
-                    <i class="ion ion-person-add"></i>
+                    <i class="ion ion-stats-bars"></i>
                   </div>
-                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -257,34 +253,30 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                   <div class="inner">
-                    <h3>65</h3>
-    
-                    <p>Unique Visitors</p>
+                    <h3>10</h3>
+
+                    <p>Jumlah Dosen</p>
                   </div>
                   <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
+                    <i class="ion ion-stats-bars"></i>
                   </div>
-                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
             </div>
 
-            <!-- Bar chart -->
             <div class="card card-primary card-outline">
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="far fa-chart-bar"></i>
-                  Bar Chart
+                  Grafik Batang Jumlah Aplikasi Sista
                 </h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
                     <i class="fas fa-minus"></i>
                   </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
+
                 </div>
               </div>
               <div class="card-body">
@@ -298,6 +290,7 @@
         </section>
         <!-- /.content -->
       </div>
+
       <!-- /.content-wrapper -->
       <footer class="main-footer">
         <strong>Copyright &copy; 2023 <a href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a></strong>
@@ -358,15 +351,14 @@
     <script src="../../assets/plugins/flot/plugins/jquery.flot.pie.js"></script>
 
 
+<!-- Script Penampilan Grafik Batang -->
     <script>
       var bar_data = {
         data: [
           [1, 10],
-          [2, 8],
-          [3, 4],
-          [4, 13],
-          [5, 17],
-          [6, 9]
+          [2, 10],
+          [3, 10],
+          [4, 10],
         ],
         bars: {
           show: true
@@ -388,16 +380,36 @@
         colors: ['#3c8dbc'],
         xaxis: {
           ticks: [
-            [1, 'January'],
-            [2, 'February'],
-            [3, 'March'],
-            [4, 'April'],
-            [5, 'May'],
-            [6, 'June']
+            [1, 'Jumlah Seminar di Kelola'],
+            [2, 'Daftar Peserta Seminar'],
+            [3, 'Jumlah Mahasiswa'],
+            [4, 'Jumlah Dosen']
           ]
         }
       })
     </script>
+    <!-- Script Penampilan Grafik Batang -->
+
+    <!-- Logout -->
+    <script>
+      document.getElementById('logoutButton').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Anda dapat menambahkan logika validasi logout di sini
+        var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
+
+        if (confirmLogout) {
+          // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
+          // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
+          alert('Logout berhasil!');
+          window.location.href = '../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
+        } else {
+          // Tampilkan alert jika pengguna membatalkan logout
+          alert('Logout dibatalkan.');
+        }
+      });
+    </script>
+    <!-- Logout -->
 
   </body>
 

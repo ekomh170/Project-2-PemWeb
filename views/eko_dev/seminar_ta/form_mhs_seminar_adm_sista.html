@@ -39,8 +39,8 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
-          width="60">
+        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+          height="60" width="60">
       </div>
 
       <!-- Navbar -->
@@ -63,7 +63,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -82,7 +82,8 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2"
+                alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block">Eko Muchamad Haryono</a>
@@ -169,7 +170,7 @@
 
               <li class="nav-header">KELUAR SESI ADMIN</li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#" id="logoutButton" class="nav-link">
                   <i class="nav-icon fas fa-sign-out-alt"></i>
                   <p>
                     Keluar Aplikasi
@@ -450,6 +451,27 @@
         return true; // Memungkinkan pengiriman formulir
       }
     </script>
+
+    <!-- Logout -->
+    <script>
+      document.getElementById('logoutButton').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Anda dapat menambahkan logika validasi logout di sini
+        var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
+
+        if (confirmLogout) {
+          // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
+          // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
+          alert('Logout berhasil!');
+          window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
+        } else {
+          // Tampilkan alert jika pengguna membatalkan logout
+          alert('Logout dibatalkan.');
+        }
+      });
+    </script>
+    <!-- Logout -->
 
     <!-- AdminLTE for demo purposes -->
     <!-- <script src="../../../assets/dist/js/demo.js"></script> -->
