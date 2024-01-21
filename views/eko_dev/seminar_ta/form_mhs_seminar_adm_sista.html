@@ -186,6 +186,7 @@
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
+
         <!-- Content Header (Page header) -->
         <div class="content-header">
           <div class="container-fluid">
@@ -215,7 +216,7 @@
                   </div>
                   <!-- /.card-header -->
                   <!-- form start -->
-                  <form>
+                  <form id="seminarForm">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-5">
@@ -238,26 +239,17 @@
                           </div>
 
                           <div class="form-group">
-                            <label>Date:</label>
-                            <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                              <input type="text" class="form-control datetimepicker-input"
-                                data-target="#reservationdate" />
-                              <div class="input-group-append" data-target="#reservationdate"
-                                data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                              </div>
+                            <label>Tanggal Seminar</label>
+                            <div class="input-group date">
+                              <input type="date" name="tanggal_seminar" class="form-control" />
                             </div>
                           </div>
 
                           <div class="bootstrap-timepicker">
                             <div class="form-group">
-                              <label>Time picker:</label>
-                              <div class="input-group date" id="timepicker" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input"
-                                  data-target="#timepicker" />
-                                <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
-                                  <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                </div>
+                              <label>Waktu Seminar</label>
+                              <div class="input-group date">
+                                <input type="time" name="waktu_seminar" class="form-control" />
                               </div>
                             </div>
 
@@ -267,7 +259,8 @@
                             </div>
                           </div>
                           <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Tambah Seminar</button>
+                            <button type="button" class="btn btn-primary" onclick="validateForm();">Tambah
+                              Seminar</button>
                           </div>
                         </div>
 
@@ -275,57 +268,84 @@
 
                         <div class="col-md-5">
                           <div class="form-group">
-                            <label>Judul TA</label>
-                            <textarea class="form-control" rows="4" placeholder="Enter ..."></textarea>
+                            <label name="judul_seminar">Judul Seminar</label>
+                            <textarea class="form-control" name="judul_seminar" rows="4"
+                              placeholder="Masukan Judul Seminar"></textarea>
                           </div>
 
                           <div class="form-group">
-                            <label for="prodi">Jenis Seminar</label>
-                            <select class="custom-select form-control-border" id="prodi">
-                              <option>Teknik Informatika</option>
-                              <option>Sistem Informasi</option>
-                              <option>Bisnis Digital</option>
+                            <label for="jenis_seminar">Jenis Seminar</label>
+                            <select class="custom-select form-control-border" id="jenis_seminar">
+                              <option readonly>Pilih Jenis Seminar</option>
+                              <option value="Seminar Tugas Akhir">Seminar Tugas Akhir</option>
+                              <option value="Seminar Proposal">Seminar Proposal</option>
+                              <option value="Seminar Sidang Skripsi">Seminar Sidang Skripsi</option>
+                              <option value="Seminar Presentasi Proyek">Seminar Presentasi Proyek</option>
+                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
+                              <option value="Seminar Studi Kasus">Seminar Studi Kasus</option>
+                              <option value="Seminar Presentasi Akhir">Seminar Presentasi Akhir</option>
+                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
                             </select>
                           </div>
 
                           <div class="form-group">
-                            <label for="prodi">Pembimbing</label>
-                            <select class="custom-select form-control-border" id="prodi">
-                              <option>Teknik Informatika</option>
-                              <option>Sistem Informasi</option>
-                              <option>Bisnis Digital</option>
+                            <label for="pembimbing">Pembimbing</label>
+                            <select class="custom-select form-control-border" id="pembimbing">
+                              <option readonly>Pilih Pembimbing</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
                             </select>
                           </div>
 
                           <div class="form-group">
-                            <label for="prodi">Penguji 1</label>
-                            <select class="custom-select form-control-border" id="prodi">
-                              <option>Teknik Informatika</option>
-                              <option>Sistem Informasi</option>
-                              <option>Bisnis Digital</option>
+                            <label for="penguji_1">Penguji 1</label>
+                            <select class="custom-select form-control-border" id="penguji_1">
+                              <option readonly>Pilih Penguji 1</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
                             </select>
                           </div>
 
                           <div class="form-group">
-                            <label for="prodi">Penguji 2</label>
-                            <select class="custom-select form-control-border" id="prodi">
-                              <option>Teknik Informatika</option>
-                              <option>Sistem Informasi</option>
-                              <option>Bisnis Digital</option>
+                            <label for="penguji_2">Penguji 2</label>
+                            <select class="custom-select form-control-border" id="penguji_2">
+                              <option readonly>Pilih Penguji 2</option>
+                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
+                              </option>
+                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
+                              </option>
+                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
+                              </option>
+                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
+                              </option>
+                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
+                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
+                              </option>
                             </select>
                           </div>
 
                           <div class="form-group">
-                            <label for="dokumen_seminar">Upload Dokumen Seminar</label>
-                            <div class="input-group">
-                              <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="dokumen_seminar">
-                                <label class="custom-file-label" for="dokumen_seminar">Choose file</label>
-                              </div>
-                              <div class="input-group-append">
-                                <span class="input-group-text">Upload</span>
-                              </div>
-                            </div>
+                            <label for="status_seminar">Status Seminar</label>
+                            <input type="name" class="form-control" id="status_seminar"
+                              placeholder="Masukan Status Seminar" value="Proses Pengajuan" readonly>
                           </div>
 
                         </div>
@@ -389,6 +409,45 @@
     <script src="../../../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../../assets/dist/js/adminlte.js"></script>
+
+    <script>
+      function validateForm() {
+
+        // Dapatkan elemen formulir
+        var nim = document.getElementById("nim").value;
+        var nama_mhs = document.getElementById("nama_mhs").value;
+        var prodi = document.getElementById("prodi").value;
+        // var tanggal_seminar = document.getElementById("tanggal_seminar").value;
+        // var waktu_seminar = document.getElementById("waktu_seminar").value;
+        var ruangan = document.getElementById("ruangan").value;
+        // var judul_seminar = document.getElementById("judul_seminar").value;
+        var jenis_seminar = document.getElementById("jenis_seminar").value;
+        var pembimbing = document.getElementById("pembimbing").value;
+        var penguji_1 = document.getElementById("penguji_1").value;
+        var penguji_2 = document.getElementById("penguji_2").value;
+
+        // Periksa apakah ada kolom yang kosong
+        if (
+          // !nim || !nama_mhs || !prodi || !tanggal_seminar ||
+          // !waktu_seminar || !ruangan || !judul_seminar || !jenis_seminar ||
+          // !pembimbing || !penguji_1 || !penguji_2
+
+          !nim || !nama_mhs || !prodi || !ruangan || !jenis_seminar ||
+          !pembimbing || !penguji_1 || !penguji_2
+        ) {
+          alert("Silakan isi semua kolom!");
+          return false; // Mencegah pengiriman formulir
+        }
+
+        // Tampilkan pemberitahuan keberhasilan
+        alert("Formulir berhasil disimpan!");
+       
+       window.location.href = "kelola_seminar_adm_sista.html";
+
+
+        return true; // Memungkinkan pengiriman formulir
+      }
+    </script>
 
     <!-- AdminLTE for demo purposes -->
     <!-- <script src="../../../assets/dist/js/demo.js"></script> -->
