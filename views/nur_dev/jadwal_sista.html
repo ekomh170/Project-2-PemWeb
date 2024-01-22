@@ -1,309 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jadwal Seminar</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="../../assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="../../assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="../../assets/plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../../assets/dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="../../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="../../assets/plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="../../assets/plugins/summernote/summernote-bs4.min.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Jadwal Seminar - Sista</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <style>
-    .content-wrappers {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  </style>
-</head>
-<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
-<div class="wrapper">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
+    <link rel="icon" media="(max-width: 640px)" href="../../../assets/dist/img/favicon/android-chrome-512x512.png">
 
-  <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="../../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet">
 
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li> -->
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="jadwal.html" class="nav-link">Jadwal</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="daftar.html" class="nav-link">Daftar Seminar</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="berita.html" class="nav-link">Berita</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="berita.html" class="nav-link">About</a>
-      </li>
-    </ul>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/../../assets/landing_page/css/all.min.css"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    
-      
-  </nav>
-  <!-- /.navbar -->
+    <!-- Libraries Stylesheet -->
+    <link href="../../assets/landing_page/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../assets/landing_page/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Main Sidebar Container -->
-  <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    Brand Logo
-    <a href="index3.html" class="brand-link">
-      <img src="../../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Jadwal Seminar</span>
-    </a>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../assets/landing_page/css/bootstrap.min.css" rel="stylesheet">
 
-    Sidebar
-    <div class="sidebar">
-      Sidebar user panel (optional)
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+    <!-- Template Stylesheet -->
+    <link href="../../assets/landing_page/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <img class="animation__shake" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+                height="60" width="60">
         </div>
-        <div class="info">
-          <a href="#" class="d-block">Nur Fadilah</a>
-        </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+          <a href="index.html" class="navbar-brand">
+            <img class="img-fluid" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Logo"
+              style="border-radius: 50%;" width="65%" height="65%">
+          </a>
+          <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="../index.html" class="nav-item nav-link">Halaman Utama</a>
+              <a href="jadwal_sista.html" class="nav-item nav-link active">Jadwal</a>
+              <a href="../adit_dev/form_daftar_seminar_sista.html" class="nav-item nav-link">Pengajuan</a>
+              <a href="../adit_dev/form_peserta_sista.html" class="nav-item nav-link">Peserta</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Hal Lain</a>
+                <div class="dropdown-menu bg-light rounded-0 m-0">
+                  <a href="../berita.html" class="dropdown-item">Berita</a>
+                  <a href="../tentang.html" class="dropdown-item">Tentang Project</a>
+                  <a href="../kontak.html" class="dropdown-item">Kontak Project</a>
+                </div>
+              </div>
+              <a href="login_sista.html" class="nav-item nav-link">Login</a>
+              <a href="../okta_dev/regis_sista.html" class="nav-item nav-link">Register</a>
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+              <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </nav>
       </div>
+    </div>
+    <!-- Navbar End -->
 
-      SidebarSearch Form
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container text-center py-5">
+        <h1 class="display-2 text-dark mb-4 animated slideInDown">Jadwal Seminar</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Halaman Utama</a></li>
+            <li class="breadcrumb-item text-dark" aria-current="page">Jadwal Seminar</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+
+      </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-primary mb-4">Akses Cepat Tautan :</h4>
+            <a class="btn btn-link" href="../index.html">Halaman Utama</a>
+            <a class="btn btn-link" href="jadwal_sista.html">Jadwal Seminar</a>
+            <a class="btn btn-link" href="../adit_dev/form_peserta_sista.html">Pengajuan Seminar</a>
+            <a class="btn btn-link" href="../adit_dev/form_daftar_seminar_sista.html">Pendaftaran Peserta Seminar</a>
+            <a class="btn btn-link" href="../berita.html">Berita</a>
+            <a class="btn btn-link" href="../tentang.html">Tentang Project</a>
+            <a class="btn btn-link" href="../kontak.html">Kontak Project</a>
+            <a class="btn btn-link" href="login_sista.html">Login</a>
+            <a class="btn btn-link" href="../okta_dev/regis_sista.html">Register</a>
           </div>
         </div>
       </div>
-
     </div>
-    /.sidebar
-  </aside> -->
+    <!-- Footer End -->
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrappers">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Jadwal Seminar</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Jadwal</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
         <div class="row">
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>No</th>
-                    <th>NIM</th>
-                    <th>Mahasiswa/i</th>
-                    <th>Seminar</th>
-                    <th>Waktu</th>
-                    <th>Ruangan</th>
-                    <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                    <th scope="row">01</th>
-                    <td>0110223075</td>
-                    <td>Nur Fadilah</td>
-                    <td>Building carater</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Audit</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">02</th>
-                    <td>0110223079</td>
-                    <td>Eko Muchamad Haryono</td>
-                    <td>Pemrograman Web 1</td>
-                    <td>10:00 06-02-2024</td>
-                    <td>B3-302</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">03</th>
-                    <td>0110223074</td>
-                    <td>Aditya Febriadi</td>
-                    <td>Maching Learning</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>B3-302</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">04</th>
-                    <td>0110223080</td>
-                    <td>Octaviani Nursalsabila</td>
-                    <td>Dasar-dasar Pemrograman</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>A2-202</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">05</th>
-                    <td>0110223047</td>
-                    <td>Miftah Adz Dzaudan Islam</td>
-                    <td>Project UAS</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Audit</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">06</th>
-                    <td>0110123062</td>
-                    <td>ahmad muhammad jibril</td>
-                    <td>Building carater</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Audit</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">07</th>
-                    <td>0110223065</td>
-                    <td>Faturahman Alfarisi</td>
-                    <td>Building carater</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Audit</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">08</th>
-                    <td>0110223061</td>
-                    <td>Muhamad Sayyid Fadhil</td>
-                    <td>Bimbingan Akademik</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Audit-203</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">09</th>
-                    <td>0110123034</td>
-                    <td>Muhammad farhan</td>
-                    <td>Membaca lebih baik</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Perpustakaan</td>
-                    <td><a href="#" class="btn btn-danger">On hold</a></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">10</th>
-                    <td>:0110123126</td>
-                    <td>Muhammad Fachri Anwar</td>
-                    <td>Penting nya kebudayaan daerah</td>
-                    <td>10:00 05-05-2024</td>
-                    <td>Gedung NF</td>
-                    <td><a href="#" class="btn btn-warning">Open</a></td>
-                    </tr>
-                </thead>
-              </table>
-              <ul id="participantList">
-                <a href="daftar_peserta.html" id="registrationLink">
-                  <button type="submit" class="btn btn-primary">Daftar Peserta</button>
-                </a>
-              </ul>
-        
-              <script src="script.js">
-                function redirectToRegistration() {
-                  // Fungsi ini akan dipanggil ketika salah satu elemen <li> diklik atau tombol "Daftar" diklik
-                  // Mengarahkan ke halaman pendaftaran
-                  window.location.href = 'daftar_peserta.html';
-              }
-              
-              </script>
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="fw-medium" href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a> Sista
+            1.0.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Versi Aplikasi : Sista 1.0
+          </div>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2023-2024 <a href="https://adminlte.io">Project SISTA</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0
+      </div>
     </div>
-  </footer>
+    <!-- Copyright End -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="../../assets/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="../../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="../../assets/plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="../../assets/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="../../assets/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="../../assets/plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="../../assets/plugins/moment/moment.min.js"></script>
-<script src="../../assets/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="../../assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="../../assets/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="../../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../assets/dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../assets/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../../assets/dist/js/pages/dashboard.js"></script>
-</body>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+        class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/landing_page/lib/wow/wow.min.js"></script>
+    <script src="../../assets/landing_page/lib/easing/easing.min.js"></script>
+    <script src="../../assets/landing_page/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../assets/landing_page/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../assets/landing_page/js/main.js"></script>
+  </body>
+
 </html>
