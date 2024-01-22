@@ -1,51 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/dist/okta_css/regis_seminar.css">
-    <title>Form Registration</title>
-</head>
-<body>
-    <div class="container">
-        <div class="title">Registration</div>
-        <form action="">
-            <br>
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../../assets/dist/img/favicon/favicon.ico">
+        <link rel="icon" media="(max-width: 640px)" href="../../assets/dist/img/favicon/android-chrome-512x512.png">
+
+        <link rel="stylesheet" href="../../assets/dist/bs_5/css/">
+
+        <link href="../../assets/dist/bs_5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../assets/dist/bs_5/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../assets/dist/bs_5/css/style.css" rel="stylesheet">
+
+        <title>Halaman Register - SISTA</title>
+    </head>
+
+    <body>
+        <form class="form-02-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="_lk_de">
+                            <div class="form-03-main">
+                                <div class="logo">
+                                    <img src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+                                        style="border-radius: 50%;">
+                                    <!-- <img src="../../assets/dist/bs_5/images/user.png"> -->
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="nama_mhs" name="nama_mhs" class="form-control _ge_de_ol" type="text"
+                                        placeholder="Masukan Nama Mahasiswa" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="form-control _ge_de_ol" name="prodi">
+                                        <option value="" disabled selected>Pilih Program Studi</option>
+                                        <option value="Teknik Informatika">Teknik Informatika</option>
+                                        <option value="Sistem Infromasi">Sistem Informasi</option>
+                                        <option value="Bisnis Digital">Bisnis Digital</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="username" name="username" class="form-control _ge_de_ol" type="text"
+                                        placeholder="Masukan Username" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control _ge_de_ol" type="text"
+                                        placeholder="Masukan Email" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control _ge_de_ol" type="text"
+                                        placeholder="Masukan Password" required="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" name="password_confirm"
+                                        class="form-control _ge_de_ol" type="text"
+                                        placeholder="Masukan Password Konfirmasi" required="">
+                                </div>
+
+                                <div class="checkbox">
+                                    <a href="../nur_dev/login_sista.html">Sudah Ada Akun? Login</a>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="_btn_04">
+                                        <a onclick="validateRegister()">Register</a>
+                                    </div>
+                                    <div class="_btn_04 mt-3">
+                                        <a href="../index.html">Halaman Utama</a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group pt-0">
+                                    <div class="_social_04">
+                                        <ol>
+                                            <li><a href="https://www.facebook.com/?locale=id_ID"><i
+                                                        class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://twitter.com/i/flow/login"><i
+                                                        class="fa fa-twitter"></i></a></li>
+                                            <li><a
+                                                    href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="https://www.instagram.com/"><i
+                                                        class="fa fa-instagram"></a></i></a></li>
+                                            <li><a href="https://www.linkedin.com/login/in"><i
+                                                        class="fa fa-linkedin"></i></a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="details">Study Program</span>
-                    <select required>
-                        <option value=""disabled selected>Select your study program</option>
-                        <option value="Teknik Informatika">Teknik Informatika</option>
-                        <option value="Sistem Infromasi">Sistem Informasi</option>
-                        <option value="Bisnis Digital">Bisnis Digital</option>
-                    </select>
-                </div>
-                <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username">
-                </div>
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="email" placeholder="Enter your email" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="password" placeholder="Enter your password">
-                </div>
-                <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Confirm your password">
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="Register">
             </div>
         </form>
-    </div>
-</body>
+        <script>
+            function validateRegister() {
+                // Ambil nilai input formulir
+                var namaMhs = document.getElementsByName("nama_mhs")[0].value;
+                var prodi = document.getElementsByName("prodi")[0].value;
+                var username = document.getElementsByName("username")[0].value;
+                var email = document.getElementsByName("email")[0].value;
+                var password = document.getElementsByName("password")[0].value;
+                var confirmPassword = document.getElementsByName("password_confirm")[0].value;
+
+                // Periksa apakah ada isian yang kosong
+                if (namaMhs === '' || prodi === '' || username === '' || email === '' || password === '' ||
+                    confirmPassword === '') {
+                    alert('Semua kolom harus diisi');
+                    return false;
+                }
+
+                // Periksa apakah password dan konfirmasi password cocok
+                if (password !== confirmPassword) {
+                    alert('Password dan Konfirmasi Password tidak cocok');
+                    return false;
+                }
+
+                // Tambahkan validasi tambahan jika diperlukan
+
+                // Jika semua validasi berhasil, tampilkan pemberitahuan berhasil
+                alert('Registrasi Akun berhasil! Anda akan diarahkan ke halaman login.');
+
+                // Arahkan ke halaman login (ganti login.html sesuai dengan halaman login Anda)
+                window.location.href = '../nur_dev/login_sista.html';
+
+                // Jika Anda ingin mengaktifkan baris di bawah untuk mengirim formulir, uncomment baris berikut
+                // document.forms["registrationForm"].submit();
+            }
+        </script>
+
+    </body>
+
+
 </html>
