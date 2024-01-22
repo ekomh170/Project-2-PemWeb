@@ -225,7 +225,7 @@
                 <!-- /.card -->
                 <div class="card">
                   <div class="card-body">
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="kelolaseminar" class="table table-bordered table-striped">
                       <thead>
                         <tr>
                           <th>No</th>
@@ -504,16 +504,16 @@
     $(document).on('click', '.btn-outline-danger', handleDeleteButtonClick);
 
     // DataTables initialization with dynamic content
-    var table = $("#example1").DataTable({
+    var table = $("#kelolaseminar").DataTable({
       "responsive": true,
       "lengthChange": false,
       "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print"],
       "pageLength": 5
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    }).buttons().container().appendTo('#kelolaseminar_wrapper .col-md-6:eq(0)');
 
     // Handle pagination change event
-    $('#example1').on('page.dt', function () {
+    $('#kelolaseminar').on('page.dt', function () {
       // Rebind delete button click event after pagination
       $('.btn-outline-danger').off('click').on('click', handleDeleteButtonClick);
     });
@@ -547,13 +547,13 @@
     <!-- Page specific script -->
     <!-- <script>
       $(function () {
-        $("#example1").DataTable({
+        $("#kelolaseminar").DataTable({
           "responsive": true,
           "lengthChange": false,
           "autoWidth": false,
           "buttons": ["copy", "csv", "excel", "pdf", "print"],
           "pageLength": 5
-        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        }).buttons().container().appendTo('#kelolaseminar_wrapper .col-md-6:eq(0)');
       });
     </script> -->
 

@@ -45,8 +45,8 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
-          width="60">
+        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+          height="60" width="60">
       </div>
 
       <!-- Navbar -->
@@ -69,7 +69,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -88,7 +88,8 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2"
+                alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block">Eko Muchamad Haryono</a>
@@ -415,9 +416,10 @@
     <script src="../../../assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="../../../assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
+
+    <!-- Data Tables & Tombol Hapus -->
     <script>
       $(document).ready(function () {
-        // Function to show alert based on column values
         function showAlert(statusSeminar) {
           if (statusSeminar === 'Ditolak') {
             var confirmation = confirm('Anda yakin ingin menghapus data?');
@@ -433,16 +435,13 @@
           }
         }
 
-        // Function to handle delete button click
         function handleDeleteButtonClick() {
           var statusSeminar = $(this).closest('tr').find('td:nth-child(5)').text().trim();
           showAlert(statusSeminar);
         }
 
-        // Initial binding of delete button click event
         $(document).on('click', '.btn-outline-danger', handleDeleteButtonClick);
 
-        // DataTables initialization with dynamic content
         var table = $("#example1").DataTable({
           "responsive": true,
           "lengthChange": false,
@@ -451,34 +450,35 @@
           "pageLength": 5
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
 
-        // Handle pagination change event
         $('#example1').on('page.dt', function () {
-          // Rebind delete button click event after pagination
+
           $('.btn-outline-danger').off('click').on('click', handleDeleteButtonClick);
         });
       });
     </script>
-    
-        <!-- Logout -->
-        <script>
-          document.getElementById('logoutButton').addEventListener('click', function (event) {
-            event.preventDefault();
-    
-            // Anda dapat menambahkan logika validasi logout di sini
-            var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
-    
-            if (confirmLogout) {
-              // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
-              // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
-              alert('Logout berhasil!');
-              window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
-            } else {
-              // Tampilkan alert jika pengguna membatalkan logout
-              alert('Logout dibatalkan.');
-            }
-          });
-        </script>
-        <!-- Logout -->
+
+    <!-- Data Tables & Tombol Hapus -->
+
+    <!-- Logout -->
+    <script>
+      document.getElementById('logoutButton').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Anda dapat menambahkan logika validasi logout di sini
+        var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
+
+        if (confirmLogout) {
+          // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
+          // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
+          alert('Logout berhasil!');
+          window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
+        } else {
+          // Tampilkan alert jika pengguna membatalkan logout
+          alert('Logout dibatalkan.');
+        }
+      });
+    </script>
+    <!-- Logout -->
 
     <!-- Page specific script -->
     <!-- <script>

@@ -43,12 +43,11 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Navbar Start -->
         <div class="container-fluid bg-white sticky-top">
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="#" class="navbar-brand">
                         <img class="img-fluid" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Logo"
                             style="border-radius: 50%;" width="65%" height="65%">
                     </a>
@@ -100,7 +99,199 @@
 
         <!-- About Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container card shadow-lg p-3 mb-5 bg-white rounded">
+                <h3 class="mb-4 text-center">Form Tambah Data Acara Seminar Mahasiswa</h3>
+                <form>
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nim"
+                                            placeholder="Masukan NIM Mahasiswa">
+                                        <label for="nim">Masukan NIM Mahasiswa</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="mahasiswa"
+                                            placeholder=" Masukan Nama Mahasiswa">
+                                        <label for="mahasiswa">Masukan Nama Mahasiswa</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="prodi" id="prodi" class="form-control"
+                                            placeholder="Pilih Program Studi">
+                                            <option selected disabled>Pilih Program Studi</option>
+                                            <option value="Teknik Informatika">Teknik Informatika</option>
+                                            <option value="Sistem Informasi">Sistem Informasi</option>
+                                            <option value="Bisnis Digital">Bisnis Digital</option>
+                                        </select>
+                                        <label for="prodi">Pilih Program Studi</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="time" class="form-control" id="waktu_seminar"
+                                            placeholder=" Masukan Waktu Seminar">
+                                        <label for="waktu_seminar">Masukan Nama Waktu Seminar</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="tanggal_seminar"
+                                            placeholder=" Masukan Tanggal Seminar">
+                                        <label for="tanggal_seminar">Masukan Tanggal Seminar</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="ruangan"
+                                            placeholder=" Masukan Nama Ruangan">
+                                        <label for="ruangan">Masukan Nama Ruangan</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Tambah
+                                        Seminar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Judul Seminar" id="judul_seminar"
+                                            style="height: 130px"></textarea>
+                                        <label for="judul_seminar">Judul Seminar</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="jenis_seminar" id="jenis_seminar" class="form-control"
+                                            placeholder="Pilih Jenis Seminar">
+                                            <option selected disabled>Pilih Jenis Seminar</option>
+                                            <option value="Seminar Tugas Akhir">Seminar Tugas Akhir</option>
+                                            <option value="Seminar Proposal">Seminar Proposal</option>
+                                            <option value="Seminar Sidang Skripsi">Seminar Sidang Skripsi</option>
+                                            <option value="Seminar Presentasi Proyek">Seminar Presentasi Proyek</option>
+                                            <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek
+                                                Akhir</option>
+                                            <option value="Seminar Studi Kasus">Seminar Studi Kasus</option>
+                                            <option value="Seminar Presentasi Akhir">Seminar Presentasi Akhir</option>
+                                            <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek
+                                                Akhir</option>
+                                        </select>
+                                        <label for="jenis_seminar">Pilih Jenis Seminar</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="pembimbing" id="pembimbing" class="form-control"
+                                            placeholder="Pilih Pembimbing">
+                                            <option selected disabled>Pilih Pembimbing</option>
+                                            <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi
+                                                Santoso, M.Sc.
+                                            </option>
+                                            <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan,
+                                                S.Si., M.Cs.
+                                            </option>
+                                            <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST.,
+                                                M.Cs.</option>
+                                            <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki,
+                                                S.T., M.T.
+                                            </option>
+                                        </select>
+                                        <label for="pembimbing">Pilih Pembimbing</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="prodi" id="prodi" class="form-control"
+                                            placeholder="Pilih Program Studi">
+                                            <option selected disabled>Pilih Penguji 1</option>
+                                            <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi
+                                                Santoso, M.Sc.
+                                            </option>
+                                            <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan,
+                                                S.Si., M.Cs.
+                                            </option>
+                                            <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST.,
+                                                M.Cs.</option>
+                                            <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki,
+                                                S.T., M.T.
+                                            </option>
+                                        </select>
+                                        <label for="prodi">Pilih Program Studi</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="prodi" id="prodi" class="form-control"
+                                            placeholder="Pilih Program Studi">
+                                            <option selected disabled>Pilih Penguji 2</option>
+                                            <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi
+                                                Santoso, M.Sc.
+                                            </option>
+                                            <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan,
+                                                S.Si., M.Cs.
+                                            </option>
+                                            <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso,
+                                                S.T., M.Kom.
+                                            </option>
+                                            <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST.,
+                                                M.Cs.</option>
+                                            <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki,
+                                                S.T., M.T.
+                                            </option>
+                                        </select>
+                                        <label for="prodi">Pilih Program Studi</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="status_seminar"
+                                            placeholder="Masukan Status Seminar" value="Proses Pengajuan" disabled>
+                                        <label for="status_seminar">Masukan Status Seminar</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
 
             </div>
         </div>
