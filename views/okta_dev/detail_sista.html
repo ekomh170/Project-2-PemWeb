@@ -1,255 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <title>Table 09</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <title>Detail Seminar - Sista</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
+    <link rel="icon" media="(max-width: 640px)" href="../../../assets/dist/img/favicon/android-chrome-512x512.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/../../assets/landing_page/css/all.min.css"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../assets/dist/okta_css/detail_seminar.css" />
+    <!-- Libraries Stylesheet -->
+    <link href="../../assets/landing_page/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../assets/landing_page/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../assets/landing_page/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../../assets/landing_page/css/style.css" rel="stylesheet">
   </head>
+
   <body>
-    <section class="ftco-section">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <img class="animation__shake" src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
+        width="60">
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center mb-5">
-            <h2 class="heading-section">Sistem Informasi Seminar Tugas Akhir - SISTA</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="table-wrap">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>NIM</th>
-                    <th>Nama</th>
-                    <th>Prodi</th>
-                    <th>Tanggal Seminar</th>
-                    <th>Jam Seminar</th>
-                    <th>Ruangan</th>
-                    <th>Judul TA</th>
-                    <th>Seminar</th>
-                    <th>Pembimbing</th>
-                    <th>Penguji 1</th>
-                    <th>Penguji 2</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-warning">Open</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-danger">On hold</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-danger">On hold</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-warning">Open</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-danger">On hold</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-danger">On hold</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-warning">Open</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-warning">Open</a></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">1001</th>
-                    <td>Mark Otto</td>
-                    <td>Teknik Informatika</td>
-                    <td>3/2/2024</td>
-                    <td>9:2 AM</td>
-                    <td>B1-101</td>
-                    <td>Praktikum</td>
-                    <td>Praktikum</td>
-                    <td>Rusmanto</td>
-                    <td>Reza</td>
-                    <td>Rio</td>
-                    <td><a href="#" class="btn btn-success">Progress</a></td>
-                  </tr>
-                </tbody>
-              </table>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+          <a href="#" class="navbar-brand">
+            <img class="img-fluid" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Logo"
+              style="border-radius: 50%;" width="65%" height="65%">
+          </a>
+          <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="../index.html" class="nav-item nav-link">Halaman Utama</a>
+              <a href="jadwal_sista.html" class="nav-item nav-link active">Jadwal</a>
+              <a href="../adit_dev/form_daftar_seminar_sista.html" class="nav-item nav-link">Pengajuan</a>
+              <a href="../adit_dev/form_peserta_sista.html" class="nav-item nav-link">Peserta</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown" data-bs-toggle="dropdown">Hal Lain</a>
+                <div class="dropdown-menu bg-light rounded-0 m-0">
+                  <a href="../berita.html" class="dropdown-item">Berita</a>
+                  <a href="../tentang.html" class="dropdown-item">Tentang Project</a>
+                  <a href="../kontak.html" class="dropdown-item">Kontak Project</a>
+                </div>
+              </div>
+              <a href="login_sista.html" class="nav-item nav-link">Login</a>
+              <a href="../okta_dev/regis_sista.html" class="nav-item nav-link">Register</a>
             </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+              <button type="button" class="btn btn-sm p-0"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container text-center py-5">
+        <h1 class="display-2 text-dark mb-4 animated slideInDown">Detail Seminar</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Halaman Utama</a></li>
+            <li class="breadcrumb-item"><a href="../nur_dev/jadwal_sista.html">Jadwal</a></li>
+            <li class="breadcrumb-item text-dark" aria-current="page">Detail Seminar</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+    <!-- Detail Seminar Start -->
+    <div class="container-xxl py-5">
+      <div class="container card shadow-lg p-3 mb-5 bg-white rounded">
+        <h3 class="mb-4 text-center mt-5">Detail Acara Seminar Mahasiswa</h3>
+        <form>
+          <div class="row g-5">
+            <div class="col-lg-6 m-5 wow fadeInUp" data-wow-delay="0.1s"
+              style="font-size: large; font-family: Arial, Helvetica, sans-serif;">
+              <div class="row g-3 m-5">
+                <div class="col-md-12">
+                  <p class="mb-2">NIM : <span id="nim">0110223079</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Nama : <span id="nama">Eko Muchamad Haryono</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Prodi : <span id="prodi">Teknik Informatika</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Judul : <span id="judul">SIMRS (Sistem Informasi Manajemen Rumah Sakit)</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Jenis Seminar : <span id="judul">Seminar Tugas Akhir</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Waktu : <span id="waktu">10:00 21-01-2024</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Ruangan : <span id="ruangan">Online</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Pembimbing : <span id="pembimbing">Prof. Dr. Indra Wijaya, S.T., M.Kom.</span></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-2">Penguji 1 : <span id="penguji">Dr. Rina Wijayanti, ST., M.Cs.</span></p>
+                </div>
+
+                <div class="col-12">
+                  <p class="mb-2">Penguji 2 : <span id="penguji">Prof. Dr. Rudi Santoso, S.T., M.Kom.</span></p>
+                </div>
+
+                <div class="col-12">
+                  <a href="../adit_dev/form_peserta_sista.html" class="btn btn-primary rounded-pill py-3 px-5">Tambah Peserta Seminar</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Detail Seminar End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-primary mb-4">Akses Cepat Tautan :</h4>
+            <a class="btn btn-link" href="../index.html">Halaman Utama</a>
+            <a class="btn btn-link" href="jadwal_sista.html">Detail Seminar</a>
+            <a class="btn btn-link" href="../adit_dev/form_peserta_sista.html">Pengajuan Seminar</a>
+            <a class="btn btn-link" href="../adit_dev/form_daftar_seminar_sista.html">Pendaftaran Peserta Seminar</a>
+            <a class="btn btn-link" href="../berita.html">Berita</a>
+            <a class="btn btn-link" href="../tentang.html">Tentang Project</a>
+            <a class="btn btn-link" href="../kontak.html">Kontak Project</a>
+            <a class="btn btn-link" href="login_sista.html">Login</a>
+            <a class="btn btn-link" href="../okta_dev/regis_sista.html">Register</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="fw-medium" href="https://github.com/ekomh170/Project-2-PemWeb.git">Kelompok 7</a> Sista
+            1.0.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Versi Aplikasi : Sista 1.0
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+        class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/landing_page/lib/wow/wow.min.js"></script>
+    <script src="../../assets/landing_page/lib/easing/easing.min.js"></script>
+    <script src="../../assets/landing_page/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../assets/landing_page/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../assets/landing_page/js/main.js"></script>
   </body>
+
 </html>
