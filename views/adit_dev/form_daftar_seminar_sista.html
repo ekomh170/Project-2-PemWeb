@@ -161,8 +161,7 @@
 
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Tambah
-                                        Seminar</button>
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="button" onclick="validateForm()">Tambah Seminar</button>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +226,7 @@
 
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <select name="prodi" id="prodi" class="form-control"
+                                        <select name="penguji1" id="penguji1" class="form-control"
                                             placeholder="Pilih Program Studi">
                                             <option selected disabled>Pilih Penguji 1</option>
                                             <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi
@@ -254,7 +253,7 @@
 
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <select name="prodi" id="prodi" class="form-control"
+                                        <select name="penguji2" id="penguji2" class="form-control"
                                             placeholder="Pilih Program Studi">
                                             <option selected disabled>Pilih Penguji 2</option>
                                             <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi
@@ -354,6 +353,33 @@
 
         <!-- Template Javascript -->
         <script src="../../assets/landing_page/js/main.js"></script>
+
+
+        <script>
+            function validateForm() {
+                var nim = document.getElementById('nim').value;
+                var mahasiswa = document.getElementById('mahasiswa').value;
+                var prodi = document.getElementById('prodi').value;
+                var waktu_seminar = document.getElementById('waktu_seminar').value;
+                var tanggal_seminar = document.getElementById('tanggal_seminar').value;
+                var ruangan = document.getElementById('ruangan').value;
+                var judul_seminar = document.getElementById('judul_seminar').value;
+                var jenis_seminar = document.getElementById('jenis_seminar').value;
+                var pembimbing = document.getElementById('pembimbing').value;
+                var penguji1 = document.getElementById('penguji1').value;
+                var penguji2 = document.getElementById('penguji2').value;
+
+                if (nim === "" || mahasiswa === "" || prodi === "" || waktu_seminar === "" ||
+                    tanggal_seminar === "" || ruangan === "" || judul_seminar === "" ||
+                    jenis_seminar === "" || pembimbing === "" || penguji1 === "" || penguji2 === "") {
+                    alert("Semua kolom harus diisi!");
+                    return false;
+                } else {
+                    alert("Pendaftaran Acara Seminar berhasil diajukan!");
+                    return true; 
+                }
+            }
+        </script>
     </body>
 
 </html>

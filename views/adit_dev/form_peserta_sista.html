@@ -191,12 +191,9 @@
                                         <label for="prodi">Pilih Judul Seminar</label>
                                     </div>
                                 </div>
-
-
                                 <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">
-                                        Tambah Peserta Baru
-                                    </button>
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="button"
+                                        onclick="validateForm()">Tambah Peserta Seminar</button>
                                 </div>
                             </div>
                         </div>
@@ -246,9 +243,6 @@
         </div>
         <!-- Copyright End -->
 
-
-
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
                 class="bi bi-arrow-up"></i></a>
@@ -264,6 +258,24 @@
 
         <!-- Template Javascript -->
         <script src="../../assets/landing_page/js/main.js"></script>
+
+        <script>
+            function validateForm() {
+                var nim = document.getElementById("nim").value;
+                var mahasiswa = document.getElementById("mahasiswa").value;
+                var prodi = document.getElementById("prodi").value;
+
+                if (nim == "" || mahasiswa == "" || prodi == "Pilih Program Studi") {
+                    alert("Mohon lengkapi formulir dengan benar!");
+                    return false;
+                }
+
+                // Jika formulir valid, Anda dapat melanjutkan ke langkah berikutnya atau mengirimkan formulir.
+                // Di sini, saya hanya menambahkan alert sebagai contoh.
+                alert("Mahasiswa Berhasil Daftar Menjadi Peserta Acara Seminar!!");
+                return true;
+            }
+        </script>
     </body>
 
 </html>
