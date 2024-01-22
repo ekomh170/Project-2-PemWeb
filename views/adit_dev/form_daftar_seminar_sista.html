@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Form Daftar Seminar - Sista</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
@@ -33,6 +34,11 @@
         <!-- Template Stylesheet -->
         <link href="../../assets/landing_page/css/style.css" rel="stylesheet">
     </head>
+    <style>
+        @media (max-width: 767px) {
+            /* Aturan CSS untuk perangkat kecil */
+        }
+    </style>
 
     <body>
         <!-- Spinner Start -->
@@ -159,24 +165,6 @@
                                     </div>
                                 </div>
 
-
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="button" onclick="validateForm()">Tambah Seminar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-
-
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Judul Seminar" id="judul_seminar"
-                                            style="height: 130px"></textarea>
-                                        <label for="judul_seminar">Judul Seminar</label>
-                                    </div>
-                                </div>
-
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <select name="jenis_seminar" id="jenis_seminar" class="form-control"
@@ -196,6 +184,24 @@
                                         <label for="jenis_seminar">Pilih Jenis Seminar</label>
                                     </div>
                                 </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Judul Seminar" id="judul_seminar"
+                                            style="height: 130px"></textarea>
+                                        <label for="judul_seminar">Judul Seminar</label>
+                                    </div>
+                                </div>
+
+
 
                                 <div class="col-12">
                                     <div class="form-floating">
@@ -283,6 +289,11 @@
                                         <input type="text" class="form-control" id="status_seminar"
                                             placeholder="Masukan Status Seminar" value="Proses Pengajuan" disabled>
                                         <label for="status_seminar">Masukan Status Seminar</label>
+                                    </div>
+
+                                    <div class="col-md-12 mt-3">
+                                        <button class="btn btn-primary rounded-pill py-3 px-5" type="button"
+                                            onclick="validateForm()">Tambah Seminar</button>
                                     </div>
                                 </div>
 
@@ -376,7 +387,7 @@
                     return false;
                 } else {
                     alert("Pendaftaran Acara Seminar berhasil diajukan!");
-                    return true; 
+                    return true;
                 }
             }
         </script>

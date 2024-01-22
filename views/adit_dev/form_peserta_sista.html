@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Form Daftar Peserta Seminar - Sista</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
@@ -33,6 +34,17 @@
         <!-- Template Stylesheet -->
         <link href="../../assets/landing_page/css/style.css" rel="stylesheet">
     </head>
+    <style>
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+
+            .card {
+                margin: 10px;
+            }
+        }
+    </style>
 
     <body>
         <!-- Spinner Start -->
@@ -89,7 +101,7 @@
                 <h1 class="display-2 text-dark mb-4 animated slideInDown">Form Daftar Peserta Seminar</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="index.html">Halaman Utama</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html">Halaman Utama</a></li>
                         <li class="breadcrumb-item text-dark" aria-current="page">Form Daftar Peserta Seminar</li>
                     </ol>
                 </nav>
@@ -100,105 +112,120 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <form>
-                    <div class="card p-5 shadow-lg p-3 mb-5 bg-white rounded">
-                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="row g-3">
-                                <h3 class="mb-2 text-center ">Form Daftar Peserta Seminar</h3>
-                                <p class="mb-2">Mahasiswa Seminar : Eko Muchamad Haryono</p>
-                                <p class="mb-2">Judul : SIMRS (Sistem Informasi Manajemen Rumah Sakit)</p>
-                                <p class="mb-2">Waktu : 10:00 21-01-2024</p>
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="nim"
-                                            placeholder="Masukan NIM Mahasiswa">
-                                        <label for="nim">Masukan NIM Mahasiswa</label>
-                                    </div>
-                                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-12">
+                        <form>
+                            <div class="card p-5 shadow-lg p-3 mb-5 bg-white rounded">
+                                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="row g-3">
+                                        <h3 class="mb-2 text-center ">Form Daftar Peserta Seminar</h3>
+                                        <p class="mb-2">Mahasiswa Seminar : Eko Muchamad Haryono</p>
+                                        <p class="mb-2">Judul : SIMRS (Sistem Informasi Manajemen Rumah Sakit)</p>
+                                        <p class="mb-2">Waktu : 10:00 21-01-2024</p>
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="nim"
+                                                    placeholder="Masukan NIM Mahasiswa">
+                                                <label for="nim">Masukan NIM Mahasiswa</label>
+                                            </div>
+                                        </div>
 
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="mahasiswa"
-                                            placeholder=" Masukan Nama Mahasiswa">
-                                        <label for="mahasiswa">Masukan Nama Mahasiswa</label>
-                                    </div>
-                                </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="mahasiswa"
+                                                    placeholder=" Masukan Nama Mahasiswa">
+                                                <label for="mahasiswa">Masukan Nama Mahasiswa</label>
+                                            </div>
+                                        </div>
 
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <select name="prodi" id="prodi" class="form-control"
-                                            placeholder="Pilih Program Studi">
-                                            <option selected disabled>Pilih Program Studi</option>
-                                            <option value="Teknik Informatika">Teknik Informatika</option>
-                                            <option value="Sistem Informasi">Sistem Informasi</option>
-                                            <option value="Bisnis Digital">Bisnis Digital</option>
-                                        </select>
-                                        <label for="prodi">Pilih Program Studi</label>
-                                    </div>
-                                </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <select name="prodi" id="prodi" class="form-control"
+                                                    placeholder="Pilih Program Studi">
+                                                    <option selected disabled>Pilih Program Studi</option>
+                                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                                    <option value="Bisnis Digital">Bisnis Digital</option>
+                                                </select>
+                                                <label for="prodi">Pilih Program Studi</label>
+                                            </div>
+                                        </div>
 
-                                <p class="mb-2 text-danger">Note : Jika Ingin Mengganti Acara Seminar Isi Form Di Bawah
-                                    :
-                                </p>
+                                        <p class="mb-2 text-danger">Note : Jika Ingin Mengganti Acara Seminar Isi Form
+                                            Di Bawah
+                                            :
+                                        </p>
 
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <select name="prodi" id="prodi" class="form-control"
-                                            placeholder="Pilih Mahasiswa">
-                                            <option selected disabled>Pilih Mahasiswa</option>
-                                            <option value="Eko Muchamad Haryono">Eko Muchamad Haryono</option>
-                                            <option value="Aditya Febriadi">Aditya Febriadi</option>
-                                            <option value="Octaviani Nursalsabila">Octaviani Nursalsabila</option>
-                                            <option value="Nur Fadilah">Nur Fadilah</option>
-                                            <option value="Fatiya Labibah">Fatiya Labibah</option>
-                                            <option value="Yossy Indra Kusuma">Yossy Indra Kusuma</option>
-                                            <option value="Farida Rabbani Virdynata">Farida Rabbani Virdynata</option>
-                                            <option value="Zaky Muhammad Hafizh">Zaky Muhammad Hafizh</option>
-                                            <option value="Shinta Nur Allyani">Shinta Nur Allyani</option>
-                                            <option value="Siti Karimah Warlidah">Siti Karimah Warlidah</option>
-                                        </select>
-                                        <label for="prodi">Pilih Mahasiswa</label>
-                                    </div>
-                                </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <select name="prodi" id="prodi" class="form-control"
+                                                    placeholder="Pilih Mahasiswa">
+                                                    <option selected disabled>Pilih Mahasiswa</option>
+                                                    <option value="Eko Muchamad Haryono">Eko Muchamad Haryono</option>
+                                                    <option value="Aditya Febriadi">Aditya Febriadi</option>
+                                                    <option value="Octaviani Nursalsabila">Octaviani Nursalsabila
+                                                    </option>
+                                                    <option value="Nur Fadilah">Nur Fadilah</option>
+                                                    <option value="Fatiya Labibah">Fatiya Labibah</option>
+                                                    <option value="Yossy Indra Kusuma">Yossy Indra Kusuma</option>
+                                                    <option value="Farida Rabbani Virdynata">Farida Rabbani Virdynata
+                                                    </option>
+                                                    <option value="Zaky Muhammad Hafizh">Zaky Muhammad Hafizh</option>
+                                                    <option value="Shinta Nur Allyani">Shinta Nur Allyani</option>
+                                                    <option value="Siti Karimah Warlidah">Siti Karimah Warlidah</option>
+                                                </select>
+                                                <label for="prodi">Pilih Mahasiswa</label>
+                                            </div>
+                                        </div>
 
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <select name="prodi" id="prodi" class="form-control"
-                                            placeholder="Pilih Judul Seminar">
-                                            <option selected disabled>Pilih Judul Seminar</option>
-                                            <option value="Sistem Informasi Manajemen RS">Sistem Informasi Manajemen RS
-                                            </option>
-                                            <option value="Sistem Informasi Keuangan Bisnis">Sistem Informasi Keuangan
-                                                Bisnis</option>
-                                            <option value="Sistem Informasi Berita">Sistem Informasi Berita</option>
-                                            <option value="Sistem Informasi Pemeriksaan">Sistem Informasi Pemeriksaan
-                                            </option>
-                                            <option value="Sistem Informasi Persetujuan">Sistem Informasi Persetujuan
-                                            </option>
-                                            <option value="Sistem Informasi Inventaris">Sistem Informasi Inventaris
-                                            </option>
-                                            <option value="Sistem Informasi Kepegawaian Modern">Sistem Informasi
-                                                Kepegawaian
-                                                Modern</option>
-                                            <option value="Sistem Informasi Penjualan Online">Sistem Informasi Penjualan
-                                                Online</option>
-                                            <option value="Sistem Informasi Perpustakaan Digital">Sistem Informasi
-                                                Perpustakaan Digital</option>
-                                            <option value="Sistem Informasi Manajemen Produksi">Sistem Informasi
-                                                Manajemen
-                                                Produksi</option>
-                                        </select>
-                                        <label for="prodi">Pilih Judul Seminar</label>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <select name="prodi" id="prodi" class="form-control"
+                                                    placeholder="Pilih Judul Seminar">
+                                                    <option selected disabled>Pilih Judul Seminar</option>
+                                                    <option value="Sistem Informasi Manajemen RS">Sistem Informasi
+                                                        Manajemen RS
+                                                    </option>
+                                                    <option value="Sistem Informasi Keuangan Bisnis">Sistem Informasi
+                                                        Keuangan
+                                                        Bisnis</option>
+                                                    <option value="Sistem Informasi Berita">Sistem Informasi Berita
+                                                    </option>
+                                                    <option value="Sistem Informasi Pemeriksaan">Sistem Informasi
+                                                        Pemeriksaan
+                                                    </option>
+                                                    <option value="Sistem Informasi Persetujuan">Sistem Informasi
+                                                        Persetujuan
+                                                    </option>
+                                                    <option value="Sistem Informasi Inventaris">Sistem Informasi
+                                                        Inventaris
+                                                    </option>
+                                                    <option value="Sistem Informasi Kepegawaian Modern">Sistem Informasi
+                                                        Kepegawaian
+                                                        Modern</option>
+                                                    <option value="Sistem Informasi Penjualan Online">Sistem Informasi
+                                                        Penjualan
+                                                        Online</option>
+                                                    <option value="Sistem Informasi Perpustakaan Digital">Sistem
+                                                        Informasi
+                                                        Perpustakaan Digital</option>
+                                                    <option value="Sistem Informasi Manajemen Produksi">Sistem Informasi
+                                                        Manajemen
+                                                        Produksi</option>
+                                                </select>
+                                                <label for="prodi">Pilih Judul Seminar</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary rounded-pill py-3 px-5" type="button"
+                                                onclick="validateForm()">Tambah Peserta Seminar</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="button"
-                                        onclick="validateForm()">Tambah Peserta Seminar</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
         <!-- About End -->
