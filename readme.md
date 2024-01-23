@@ -1,6 +1,6 @@
 # Aplikasi Sistem Informasi Seminar Tugas Akhir (SISTA)
 
-## Tim Pengembang (Team 7)
+## Project 2 - PemWeb 1 (Team 7)
 
 **Ketua Kelompok:**
 - Eko Muchamad Haryono
