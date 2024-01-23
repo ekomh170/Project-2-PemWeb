@@ -289,7 +289,7 @@
 
 /*** About ***/
 .video {
-    background: linear-gradient(rgba(128, 128, 128, .85), rgba(128, 128, 128, .85)), url(../img/carousel_utama.jpg) center center no-repeat;
+    background: linear-gradient(rgba(128, 128, 128, .85), rgba(128, 128, 128, .85));
     background-size: cover;
 }
 
