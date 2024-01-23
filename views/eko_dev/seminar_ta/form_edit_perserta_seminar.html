@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Form Edit Data Acara Seminar Mahasiswa - Adm - SISTA</title>
+    <title>Form Edit Data Peserta Seminar Mahasiswa - Adm - SISTA</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../../../assets/dist/img/favicon/favicon.ico">
@@ -39,8 +39,8 @@
 
       <!-- Preloader -->
       <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" height="60"
-          width="60">
+        <img class="animation__shake" src="../../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+          height="60" width="60">
       </div>
 
       <!-- Navbar -->
@@ -63,7 +63,7 @@
               <i class="fas fa-expand-arrows-alt"></i>
             </a>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.navbar -->
@@ -82,7 +82,8 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2" alt="User Image">
+              <img src="../../../assets/dist/img/profile/foto_profile.png" class="img-circle elevation-2"
+                alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block">Eko Muchamad Haryono</a>
@@ -192,14 +193,14 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Form Edit Acara Seminar Mahasiswa <button type="button"
+                <h1 class="m-0">Form Edit Seminar Mahasiswa TA <button type="button"
                     class="btn btn-outline-primary btn-sm"><a href="../seminar_ta/edit_mhs_seminar_adm_sista.html"><i
                         class="fa fa-edit"></i></a></button> </h1>
               </div><!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="../dashboard_seminar_adm_sista.html">Dashboard</a></li>
-                  <li class="breadcrumb-item active">Form Edit Acara Seminar Mahasiswa</li>
+                  <li class="breadcrumb-item active">Form Edit Seminar Mahasiswa TA</li>
                 </ol>
               </div><!-- /.col -->
             </div><!-- /.row -->
@@ -224,12 +225,13 @@
                         <div class="col-md-5">
                           <div class="form-group">
                             <label for="nim">NIM</label>
-                            <input type="name" class="form-control" id="nim"
-                              placeholder="Masukan Nomor Induk Mahasiswa" value="0110223079">
+                            <input type="name" class="form-control" id="nim" placeholder="Masukan Nomor Induk Mahasiswa"
+                              value="0110223079">
                           </div>
                           <div class="form-group">
                             <label for="nama_mhs">Mahasiswa</label>
-                            <input type="name" class="form-control" id="nama_mhs" placeholder="Masukan Mahasiswa" value="Eko Muchamad Haryono">
+                            <input type="name" class="form-control" id="mahasiswa" placeholder="Masukan Mahasiswa"
+                              value="Eko Muchamad Haryono">
                           </div>
                           <div class="form-group">
                             <label for="prodi">Prodi</label>
@@ -240,118 +242,67 @@
                             </select>
                           </div>
 
+                          <div class="col-md-1"></div>
+
+                          <p class="text-danger">Note : Jika Acara Seminarnya Ingin di Rubah Bisa Di Isi Form di Bawah
+                            Ini :</p>
+
                           <div class="form-group">
-                            <label>Tanggal Seminar</label>
-                            <div class="input-group date">
-                              <input type="date" name="tanggal_seminar" value="2024-01-21" class="form-control" />
-                            </div>
+                            <label for="mhs_acara_seminar">Pilih Mahasiswa Tekait Acara Seminar</label>
+                            <select class="custom-select form-control-border" id="mhs_acara_seminar">
+                              <option value="Eko Muchamad Haryono">Eko Muchamad Haryono</option>
+                              <option value="Aditya Febriadi">Aditya Febriadi</option>
+                              <option value="Octaviani Nursalsabila">Octaviani Nursalsabila
+                              </option>
+                              <option value="Nur Fadilah">Nur Fadilah</option>
+                              <option value="Fatiya Labibah">Fatiya Labibah</option>
+                              <option value="Yossy Indra Kusuma">Yossy Indra Kusuma</option>
+                              <option value="Farida Rabbani Virdynata">Farida Rabbani Virdynata
+                              </option>
+                              <option value="Zaky Muhammad Hafizh">Zaky Muhammad Hafizh</option>
+                              <option value="Shinta Nur Allyani">Shinta Nur Allyani</option>
+                              <option value="Siti Karimah Warlidah">Siti Karimah Warlidah</option>
+                            </select>
                           </div>
 
-                          <div class="bootstrap-timepicker">
-                            <div class="form-group">
-                              <label>Waktu Seminar</label>
-                              <div class="input-group date">
-                                <input type="time" name="waktu_seminar" value="10:10" class="form-control" />
-                              </div>
-                            </div>
-
-                            <div class="form-group">
-                              <label for="ruangan">Ruangan</label>
-                              <input type="name" class="form-control" id="ruangan" placeholder="Masukan Ruangan" value="B1-101">
-                            </div>
+                          <div class="form-group">
+                            <label for="judul_acara_seminar">Judul Acara Seminar</label>
+                            <select class="custom-select form-control-border" id="judul_acara_seminar">
+                              <option value="Sistem Informasi Manajemen RS">Sistem Informasi
+                                Manajemen RS
+                              </option>
+                              <option value="Sistem Informasi Keuangan Bisnis">Sistem Informasi
+                                Keuangan
+                                Bisnis</option>
+                              <option value="Sistem Informasi Berita">Sistem Informasi Berita
+                              </option>
+                              <option value="Sistem Informasi Pemeriksaan">Sistem Informasi
+                                Pemeriksaan
+                              </option>
+                              <option value="Sistem Informasi Persetujuan">Sistem Informasi
+                                Persetujuan
+                              </option>
+                              <option value="Sistem Informasi Inventaris">Sistem Informasi
+                                Inventaris
+                              </option>
+                              <option value="Sistem Informasi Kepegawaian Modern">Sistem Informasi
+                                Kepegawaian
+                                Modern</option>
+                              <option value="Sistem Informasi Penjualan Online">Sistem Informasi
+                                Penjualan
+                                Online</option>
+                              <option value="Sistem Informasi Perpustakaan Digital">Sistem
+                                Informasi
+                                Perpustakaan Digital</option>
+                              <option value="Sistem Informasi Manajemen Produksi">Sistem Informasi
+                                Manajemen
+                                Produksi</option>
+                            </select>
                           </div>
-                          
+
                           <div class="card-footer">
                             <button type="button" class="btn btn-primary" onclick="validateForm();">Edit
                               Seminar</button>
-                          </div>
-                        </div>
-
-                        <div class="col-md-1"></div>
-
-                        <div class="col-md-5">
-                          <div class="form-group">
-                            <label name="judul_seminar">Judul Seminar</label>
-                            <textarea class="form-control" name="judul_seminar" rows="4"
-                              placeholder="Masukan Judul Seminar">SIMRS (Sistem Informasi Manajemen Rumah Sakit)	</textarea>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="jenis_seminar">Jenis Seminar</label>
-                            <select class="custom-select form-control-border" id="jenis_seminar">
-                              <option value="Seminar Tugas Akhir">Seminar Tugas Akhir</option>
-                              <option readonly>Pilih Jenis Seminar</option>
-                              <option value="Seminar Proposal">Seminar Proposal</option>
-                              <option value="Seminar Sidang Skripsi">Seminar Sidang Skripsi</option>
-                              <option value="Seminar Presentasi Proyek">Seminar Presentasi Proyek</option>
-                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
-                              <option value="Seminar Studi Kasus">Seminar Studi Kasus</option>
-                              <option value="Seminar Presentasi Akhir">Seminar Presentasi Akhir</option>
-                              <option value="Seminar Presentasi Proyek Akhir">Seminar Presentasi Proyek Akhir</option>
-                            </select>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="pembimbing">Pembimbing</label>
-                            <select class="custom-select form-control-border" id="pembimbing">
-                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
-                              </option>
-                              <option readonly>Pilih Pembimbing</option>
-                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
-                              </option>
-                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
-                              </option>
-                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
-                              </option>
-                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
-                              </option>
-                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
-                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
-                              </option>
-                            </select>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="penguji_1">Penguji 1</label>
-                            <select class="custom-select form-control-border" id="penguji_1">
-                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
-                              <option readonly>Pilih Penguji 1</option>
-                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
-                              </option>
-                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
-                              </option>
-                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
-                              </option>
-                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
-                              </option>
-                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
-                              </option>
-                            </select>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="penguji_2">Penguji 2</label>
-                            <select class="custom-select form-control-border" id="penguji_2">
-                              <option value="Prof. Dr. Rudi Santoso, S.T., M.Kom.">Prof. Dr. Rudi Santoso, S.T., M.Kom.
-                              </option>
-                              <option readonly>Pilih Penguji 2</option>
-                              <option value="Prof. Dr. Ir. Budi Santoso, M.Sc.">Prof. Dr. Ir. Budi Santoso, M.Sc.
-                              </option>
-                              <option value="Prof. Dr. Ahmad Hasan, S.Si., M.Cs.">Prof. Dr. Ahmad Hasan, S.Si., M.Cs.
-                              </option>
-                              <option value="Prof. Dr. Indra Wijaya, S.T., M.Kom.">Prof. Dr. Indra Wijaya, S.T., M.Kom.
-                              </option>
-                              
-                              <option value="Dr. Rina Wijayanti, ST., M.Cs.">Dr. Rina Wijayanti, ST., M.Cs.</option>
-                              <option value="Dr. Eng. Achmad Basuki, S.T., M.T.">Dr. Eng. Achmad Basuki, S.T., M.T.
-                              </option>
-                            </select>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="status_seminar">Status Seminar</label>
-                            <input type="name" class="form-control" id="status_seminar"
-                              placeholder="Masukan Status Seminar" value="Proses Pengajuan" readonly>
                           </div>
 
                         </div>
@@ -455,26 +406,44 @@
       }
     </script>
 
-        <!-- Logout -->
-        <script>
-          document.getElementById('logoutButton').addEventListener('click', function (event) {
-            event.preventDefault();
-    
-            // Anda dapat menambahkan logika validasi logout di sini
-            var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
-    
-            if (confirmLogout) {
-              // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
-              // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
-              alert('Logout berhasil!');
-              window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
-            } else {
-              // Tampilkan alert jika pengguna membatalkan logout
-              alert('Logout dibatalkan.');
-            }
-          });
-        </script>
-        <!-- Logout -->
+    <script>
+      function validateForm() {
+        var nim = document.getElementById("nim").value;
+        var mahasiswa = document.getElementById("mahasiswa").value;
+        var prodi = document.getElementById("prodi").value;
+
+        if (nim == "" || mahasiswa == "" || prodi == "Pilih Program Studi") {
+          alert("Mohon lengkapi formulir dengan benar!");
+          return false;
+        }
+
+        // Jika formulir valid, Anda dapat melanjutkan ke langkah berikutnya atau mengirimkan formulir.
+        // Di sini, saya hanya menambahkan alert sebagai contoh.
+        alert("Data Peserta Seminar Berhasil di Edit");
+        return true;
+      }
+    </script>
+
+    <!-- Logout -->
+    <script>
+      document.getElementById('logoutButton').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Anda dapat menambahkan logika validasi logout di sini
+        var confirmLogout = confirm('Apakah Anda yakin ingin keluar?');
+
+        if (confirmLogout) {
+          // Lakukan tindakan logout (redirect, membersihkan sesi, dll.)
+          // Untuk tujuan demonstrasi, kita akan menampilkan alert berhasil dan mengarahkan ke halaman logout
+          alert('Logout berhasil!');
+          window.location.href = '../../index.html'; // Ganti 'logout.php' dengan endpoint logout yang sesungguhnya
+        } else {
+          // Tampilkan alert jika pengguna membatalkan logout
+          alert('Logout dibatalkan.');
+        }
+      });
+    </script>
+    <!-- Logout -->
 
   </body>
 
