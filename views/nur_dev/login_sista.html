@@ -71,11 +71,16 @@
         var emailInput = document.getElementsByName('email')[0].value;
         var passwordInput = document.getElementsByName('password')[0].value;
     
-        // Gantilah dengan email dan password yang benar
-        var validEmail = 'ekoharyo@student.nurulfikri.ac.id';
-        var validPassword = 'nfkampusti02terbaik';
+        // Valid credentials for user 1
+        var validEmail1 = 'ekoharyo@student.nurulfikri.ac.id';
+        var validPassword1 = 'nfkampusti02terbaik';
     
-        if (emailInput === validEmail && passwordInput === validPassword) {
+        // Valid credentials for user 2
+        var validEmail2 = 'adminnf';
+        var validPassword2 = '123456';
+    
+        if ((emailInput === validEmail1 && passwordInput === validPassword1) || 
+            (emailInput === validEmail2 && passwordInput === validPassword2)) {
           alert('Login berhasil!');
           // Pengalihan ke halaman jadwal.html setelah login berhasil
           window.location.href = '../eko_dev/dashboard_seminar_adm_sista.html';
@@ -84,6 +89,7 @@
         }
       }
     </script>
+    
   </body>
 
   
