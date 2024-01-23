@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #a0a0a0;
     --secondary: #FB9F38;
@@ -255,7 +254,7 @@
 
 /*** Products ***/
 .product {
-    background: linear-gradient(rgba(128, 128, 128, .3), rgba(128, 128, 128, .3)), url(../img/product-bg.png) left bottom no-repeat;
+    background: linear-gradient(rgba(128, 128, 128, .3), rgba(128, 128, 128, .3)), url(../img/berita_sista_2.png) left bottom no-repeat;
     background-size: auto;
 }
 
@@ -290,7 +289,7 @@
 
 /*** About ***/
 .video {
-    background: linear-gradient(rgba(128, 128, 128, .85), rgba(128, 128, 128, .85)), url(../img/video-bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(128, 128, 128, .85), rgba(128, 128, 128, .85)), url(../img/carousel_utama.jpg) center center no-repeat;
     background-size: cover;
 }
 
