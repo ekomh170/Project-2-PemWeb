@@ -254,7 +254,7 @@
 
 /*** Products ***/
 .product {
-    background: linear-gradient(rgba(128, 128, 128, .3), rgba(128, 128, 128, .3)), url(../img/berita_sista_2.png) left bottom no-repeat;
+    background: linear-gradient(rgba(128, 128, 128, .3), rgba(128, 128, 128, .3));
     background-size: auto;
 }
 
