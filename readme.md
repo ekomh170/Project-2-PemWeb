@@ -38,20 +38,26 @@
     - Validasi Logout
     - Validasi Login
     - Validasi Register
+15. **Membuat Video Cara Penggunaan**
+16. **Berpartisipasi dalam melakukan Presentasi**
 
 ### Aditya Febriadi - Anggota Kelompok:
 1. **Form Daftar Seminar - Sebelum Login:** `form_daftar_peserta_sista.html` - Form pendaftaran seminar sebelum login.
 2. **Form Daftar Peserta - Sebelum Login:** `form_peserta_sista.html` - Form pendaftaran peserta sebelum login.
+3. **Berpartisipasi dalam melakukan Presentasi**
 
 ### Nur Fadilah - Anggota Kelompok:
 1. **Form Login:** `login_sista.html` - Form login untuk pengguna aplikasi.
 2. **Form Jadwal:** `jadwal_sista.html` - Tampilan jadwal seminar.
+3. **Berpartisipasi dalam melakukan Presentasi**
 
 ### Octaviani Nursalsabila - Anggota Kelompok:
 1. **Form Detail - Sebelum Login:** `detail_sista.html` - Tampilan detail seminar sebelum login.
 2. **Form Regis - Sebelum Login:** `regis_sista.html` - Form registrasi sebelum login.
 3. **Presentasi PPT:** File presentasi PowerPoint.
 4. **Materi PPT:** Materi dari presentasi.
+5. **Berpartisipasi dalam melakukan Presentasi**
+6. **Melakukan Editing Pada Video Presentasi**
 
 ## Petunjuk Penggunaan
 
