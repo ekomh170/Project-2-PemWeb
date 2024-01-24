@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,6 +17,7 @@
 
     <title>Halaman Login - SISTA</title>
   </head>
+
   <body>
     <section class="form-02-main">
       <div class="container">
@@ -24,15 +26,25 @@
             <div class="_lk_de">
               <div class="form-03-main">
                 <div class="logo">
-                  <img src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo" style="border-radius: 50%;">
+                  <img src="../../assets/dist/img/apps_logo/logo_aplikasi.jpg" alt="Sista Logo"
+                    style="border-radius: 50%;">
                   <!-- <img src="../../assets/dist/bs_5/images/user.png"> -->
                 </div>
+                <div class="card">
+                  <div class="text-center mt-2">Catatan Akun Login Sista :</div> 
+                  <div class="mt-1 pt-1 pl-4">
+                    <b class="text-danger">Email :</b> adminnf@student.nurulfikri.ac.id<br>
+                    <b class="text-danger">password :</b> 123456
+                  </div>
+                </div>
                 <div class="form-group">
-                  <input type="email" name="email" class="form-control _ge_de_ol" type="text" placeholder="adminnf@student.nurulfikri.ac.id" required="" aria-required="true">
+                  <input type="email" name="email" class="form-control _ge_de_ol" type="text"
+                    placeholder="adminnf@student.nurulfikri.ac.id" required="" aria-required="true">
                 </div>
 
                 <div class="form-group">
-                  <input type="password" name="password" class="form-control _ge_de_ol" type="text" placeholder="123456" required="" aria-required="true">
+                  <input type="password" name="password" class="form-control _ge_de_ol" type="text" placeholder="123456"
+                    required="" aria-required="true">
                 </div>
 
                 <div class="checkbox">
@@ -41,7 +53,7 @@
 
                 <div class="form-group">
 
-                    <a class="_btn_04" onclick="validateLogin()">Login</a>
+                  <a class="_btn_04" onclick="validateLogin()">Login</a>
                   <div class="_btn_04 mt-3">
                     <a href="../index.html">Halaman Utama</a>
                   </div>
@@ -52,7 +64,8 @@
                     <ol>
                       <li><a href="https://www.facebook.com/?locale=id_ID"><i class="fa fa-facebook"></i></a></li>
                       <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i
+                            class="fa fa-google-plus"></i></a></li>
                       <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></a></i></a></li>
                       <li><a href="https://www.linkedin.com/login/in"><i class="fa fa-linkedin"></i></a></li>
                     </ol>
@@ -69,17 +82,17 @@
       function validateLogin() {
         var emailInput = document.getElementsByName('email')[0].value;
         var passwordInput = document.getElementsByName('password')[0].value;
-    
+
         // Valid credentials for user 1
         var validEmail1 = 'ekoharyo@student.nurulfikri.ac.id';
         var validPassword1 = 'nfkampusti02terbaik';
-    
+
         // Valid credentials for user 2
         var validEmail2 = 'adminnf@student.nurulfikri.ac.id';
         var validPassword2 = '123456';
-    
-        if ((emailInput === validEmail1 && passwordInput === validPassword1) || 
-            (emailInput === validEmail2 && passwordInput === validPassword2)) {
+
+        if ((emailInput === validEmail1 && passwordInput === validPassword1) ||
+          (emailInput === validEmail2 && passwordInput === validPassword2)) {
           alert('Login berhasil!');
           // Pengalihan ke halaman jadwal.html setelah login berhasil
           window.location.href = '../eko_dev/dashboard_seminar_adm_sista.html';
@@ -88,8 +101,8 @@
         }
       }
     </script>
-    
+
   </body>
 
-  
+
 </html>
